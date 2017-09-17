@@ -1,48 +1,11 @@
+@import 'scss/variable';
 @import 'scss/base';
 @import 'scss/animation';
 @import 'scss/page-top';
 @import 'scss/sidebar';
 @import 'scss/post';
-
-
-
-
-.pagination {
-	margin: 30px;
-	padding: 0px 0 56px 0;
-	border-bottom: 1px solid #f2f2f2;
-
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		height: 13px;
-
-		li {
-			margin: 0 2px 0 2px;
-			display: inline;
-			line-height: 1;
-
-			 a {
-				text-decoration: none;
-			}
-		}
-	}
-
-	.pre {
-		float: left;
-	}
-
-	.next {
-		float: right;
-	}
-}
-
-
-
-
-
-
+@import 'scss/pagination';
+@import 'scss/footer';
 
 
 .like-reblog-buttons {
@@ -69,30 +32,6 @@
 	margin: 30px;
 	border-bottom: 1px solid #f2f2f2;
 }
-
-.footer {
-	clear: both;
-	text-align: center;
-	font-size: 10px;
-	margin: 0 auto;
-	bottom: 0;
-	position: absolute;
-	width: 100%;
-	padding-bottom: 20px;
-	a {
-		color: #A6A6A6;
-	}
-	a:hover{
-		color: #4786D6;
-	}
-	span{
-	}
-	.by_farbox{
-	}
-}
-
-
-
 
 /*for archive*/
 .archive{
@@ -155,21 +94,7 @@
 			padding: 11px;
 		}
 }
-.weibo{
-	width: 32px;
-	height: 32px;
-	border-radius: 300px;
-	background-color: #ED6243;
-	margin-right:5px;
 
- 	a{
-	color: #fff;
-	padding: 9px;
-	}
-	a:hover{
-	color: #BD4226;
-	}
-}
 .twitter{
 	width: 32px;
 	height: 32px;
@@ -287,7 +212,7 @@ a.btn {
 	padding: 6px 12px;
 }
 
-/* Menu样式 */
+/* Menu */
 .menu {
 	float: right;
 	padding-top: 30px;

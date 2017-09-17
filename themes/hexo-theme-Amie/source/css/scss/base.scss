@@ -1,16 +1,14 @@
 html {
-  background-color: #fff;
+  background-color: $background-color;
   -webkit-font-smoothing: antialiased;
 }
 
 body {
-  color: rgba(0, 0, 0, 0.5);
-  font-family: 'PingHei', 'PingFang SC', Helvetica Neue, 'Work Sans', 'Hiragino Sans GB', 'Microsoft YaHei', SimSun, sans-serif;
+  color: $body-font-color;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   width: 100%;
   margin: 0 auto 30px auto;
-  background-color: #fff;
-
 }
 p {
   line-height: 1.9em;
@@ -35,5 +33,4 @@ a:link, a:visited {
 
 a:hover, a:active {
   color: #4786D6;
-
 }

@@ -2,7 +2,6 @@
   width: 30%;
   -webkit-background-size: cover;
   background-size: cover;
-  background-color: #fff;
   height: 100%;
   transition:0.8s;
   top: 0;
@@ -27,7 +26,8 @@
     }
 
     .title{
-
+      font-family: 'Libre Barcode 39 Text', cursive;
+      font-size: 40px;
     }
 
   }
