@@ -2,29 +2,29 @@
   .nav
     li
       if is_home()
-        a.current(href="/")= __('Home')					
+        a.current(href="/")='Home'					
       else
-        a(href="/")= __('Home')	
+        a(href="/")='Home'
     li
       if is_current('about')
-        a.current(href="/about")= __('About')			
+        a.current(href="/about")='About'			
       else
-        a(href="/about")= __('About')
+        a(href="/about")='About'
     li
       if is_archive()
-        a.current(href="/archives")= __('Archive')
+        a.current(href="/archives")='Archive'
       else
-        a(href="/archives")= __('Archive')
+        a(href="/archives")='Archive'
     li
       if is_current('links')
-        a.current(href="/links")= __('Links')					
+        a.current(href="/links")='Links'	
       else
-        a(href="/links")= __('Links')		
+        a(href="/links")='Links'
   .information
     .back_btn
       li
         if is_post()
-          a.fa.fa-chevron-left(onclick="window.history.go(-1)") 
+          a.fa.fa-chevron-left(onclick="window.history.go(-1)")
         else
           a.fa.fa-chevron-left(onclick="window.history.go(-1)",style="display:none;") 
     .avatar

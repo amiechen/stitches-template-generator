@@ -1,16 +1,16 @@
 extends partial/layout
 
 block site_title
-    !=  config.title
+  !=  config.title
 
 block description
-    - var desc = config.title;
-    meta(name="description", content=desc)
+  - var desc = config.title;
+  meta(name="description", content=desc)
 
 block content
-    .autopagerize_page_element: .content
-      .archive.animated.fadeInDown
-        ul.list-with-title
-          include mixins
-          +postList()
-          +make_pager(__('prev'), __('next'))
+  .autopagerize_page_element: .content
+    .archive.animated.fadeInDown
+      ul.list-with-title
+        include mixins
+        +postList()
+        +make_pager(__('prev'), __('next'))
