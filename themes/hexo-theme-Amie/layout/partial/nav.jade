@@ -21,11 +21,5 @@
       else
         a(href="/links")='Links'
   .information
-    .back_btn
-      li
-        if is_post()
-          a.fa.fa-chevron-left(onclick="window.history.go(-1)")
-        else
-          a.fa.fa-chevron-left(onclick="window.history.go(-1)",style="display:none;") 
     .avatar
       img(src=theme.avatar)
