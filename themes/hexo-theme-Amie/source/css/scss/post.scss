@@ -2,7 +2,7 @@
   margin: 30px;
 
   h1,h2,h3,h4 {
-    color: $link-current-color;
+    color: $post-title-color;
   }
 
   .post-title{
@@ -10,7 +10,7 @@
       margin:0;
     }
     a {
-      color: $link-current-color;
+      color: $brand-blue;
     }
   }
 

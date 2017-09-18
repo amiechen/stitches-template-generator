@@ -1,7 +1,19 @@
-$background-color: #080708;
-$body-font-color: #50596C;
+$brand-blue: #52b1f7;
+$brand-purple: #673AB7;
+$brand-green: #82cc8f;
+
+$background-color: #151719;
+$body-font-color: white;
 $page-border-color: #191619;
-$link-color: #e91e63;
-$link-hover-color: #f06292;
-$link-current-color: #673AB7;
-$pre-background-color: #171417;
+$link-color: $brand-blue;
+$link-secondary-color: #A6A6A6;
+$link-hover-color: darken($brand-blue, 10%);
+$link-current-color: #5e70d3;
+$pre-background-color: #0e0e0e;
+$post-title-color: white;
+
+@mixin gradient-text {
+  background: linear-gradient(330deg, $brand-purple 0%, $brand-blue 25%, $brand-green 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

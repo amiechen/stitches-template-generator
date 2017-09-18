@@ -47,13 +47,14 @@ figure.highlight {
   margin: 1em 0 !important;
   border-radius: 2px !important;
   line-height: 1.1em !important;
-  background-color: #f8f8f8 !important;
+  background-color: $brand-green !important;
   overflow-x: auto !important;
   table, tr, td {
     width: 100% !important;
     border-collapse: collapse !important;
     padding: 0 !important;
     margin: 0 !important;
+    background-color: $background-color;
   }
   .gutter {
     display: none !important;
@@ -130,7 +131,7 @@ figure.highlight {
 }
 
 pre {
-  color: #525252 !important;
+  color: $brand-purple !important;
   .function .keyword, .constant {
     color: #0092db !important;
   }

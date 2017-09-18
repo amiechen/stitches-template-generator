@@ -14,9 +14,7 @@
     text-align: center;
     padding-top:240px;
     a {
-        background: linear-gradient(330deg, #e052a0 50%, #f15c41 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+      @include gradient-text;
     }
 
 
