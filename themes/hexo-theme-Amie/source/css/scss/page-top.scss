@@ -11,7 +11,8 @@
   right: 0;
   z-index: 3;
   height: 60px;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid $page-border-color;
+  background-color: $background-color;
 
   .nav{
     list-style:none;
@@ -24,15 +25,15 @@
       padding-right:20px;
     }
     a {
-      color:#5A5A5A;
+      color: $link-color;
     }
     a:hover{
-      color:#4786D6;
+      color: $link-hover-color;
     }
     a.current{
-      color:#5A5A5A;
+      color: $link-current-color;
       padding-bottom: 21px;
-      border-bottom: 1px solid #5A5A5A;
+      border-bottom: 1px solid $link-current-color;
     }
   }
 
