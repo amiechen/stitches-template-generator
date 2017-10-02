@@ -14,7 +14,7 @@ subtitle_main: Designer, Developer and Musician.
 susbtitle_secondary: 
 
 # Footer About Section
-about_footer: Amie
+about_footer: Currently doing front-end development at <a href=https://www.twitch.tv/">Twitch</a>. Previously software engineering @ <a href="https://www.signal.co/">Signal</a> and Product design for various startups.
 
 # Default post title
 default_post_title: Untitled
@@ -42,13 +42,13 @@ comments:
 google_analytics:
 
 # Social Accounts
-twitter_url: https://twitter.com/?lang=en
-facebook_url: https://www.facebook.com/
-instagram_url: https://www.instagram.com/
-dribble_url: https://dribbble.com/
-github_url: https://github.com/klugjo/hexo-theme-phantom/commits?author=klugjo
-googleplus_url: https://plus.google.com/
-behance_url: https://www.behance.net/
-fivehundredpx_url: https://500px.com/
-email_url: \#
-rss_url: \#
+twitter_url: https://twitter.com/amiechen01
+#facebook_url: https://www.facebook.com/
+instagram_url: https://www.instagram.com/amiechen01/
+dribble_url: https://dribbble.com/amiechen01
+github_url: https://github.com/amiechen
+#googleplus_url: https://plus.google.com/
+behance_url: https://www.behance.net/amiechen
+#fivehundredpx_url: https://500px.com/
+#email_url: \#
+#rss_url: \#
