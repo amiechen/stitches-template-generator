@@ -1,38 +1,21 @@
 ---
-title: Hello World
+title: Places to Visit
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+My forever-growing-list to keep my dream in check, instead of just lying on the couch in pajama all weekends :)
 
-### Create a new post
+- Point Reyes National Seashore, Inverness, CA
+- Golden Gate National Recreation Area
+- Alcatraz Island
+- Sequoia and Kings Canyon national parks
+- Joshua Tree national park
+- Lassen Volcanic national park
+- Yosemite National Park, CA
+- Yellow Stone National Park, CA
+- Death Valley, CA
+- Devils Postpile national monument
+- Redwood national and state park
+- Badlands national park
+- Pinnacles National Park
+- Channel islands national park
 
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/deployment.html)
