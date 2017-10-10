@@ -1,7 +1,9 @@
 #main {
 
   .inner {
-
+    img {
+      border: 5px solid _palette(image-border);
+    }
     .gallery-container{
       width: 100%;
       display: block;

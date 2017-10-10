@@ -1,8 +1,9 @@
 ---
-title: Places to Visit
+title: National Park Series
+cover_index: /images/point-reyes-sketch.png
 ---
 
-My forever-growing-list to keep my dream in check, instead of just lying on the couch in pajama all weekends :)
+### Current List in Making:
 
 - Point Reyes National Seashore, Inverness, CA
 - Golden Gate National Recreation Area
@@ -19,3 +20,7 @@ My forever-growing-list to keep my dream in check, instead of just lying on the 
 - Pinnacles National Park
 - Channel islands national park
 
+### Point Reyes National Seashore
+
+Sketch for Point Reyes
+![](/images/point-reyes-sketch.png)
