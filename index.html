@@ -13,24 +13,39 @@
 
         <article>
             <h2>Tabs</h2>
-            <div class="tabs">
-                <div class="tab">
-                  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            <h3>Component Structure</h3>
+            <pre>
+                <code>
+                    Component structure:
+                    .tab__container
+                        .tab__list
+                            .tab__link
+                            .tab__link
+                            .tab__link
+                        .tab__content
+                        .tab__content
+                        .tab__content
+                </code>
+            </pre>
+            <h3>Demo</h3>
+            <div class="tab__container">
+                <div class="tab__list">
+                  <button class="tab__link" onclick="openCity(event, 'London')">London</button>
+                  <button class="tab__link" onclick="openCity(event, 'Paris')">Paris</button>
+                  <button class="tab__link" onclick="openCity(event, 'Tokyo')">Tokyo</button>
                 </div>
 
-                <div id="London" class="tabcontent">
+                <div id="London" class="tab__content">
                   <h3>London</h3>
                   <p>London is the capital city of England.</p>
                 </div>
 
-                <div id="Paris" class="tabcontent">
+                <div id="Paris" class="tab__content">
                   <h3>Paris</h3>
                   <p>Paris is the capital of France.</p> 
                 </div>
 
-                <div id="Tokyo" class="tabcontent">
+                <div id="Tokyo" class="tab__content">
                   <h3>Tokyo</h3>
                   <p>Tokyo is the capital of Japan.</p>
                 </div>
