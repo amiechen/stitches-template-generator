@@ -4,15 +4,38 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Layout Collection</title>
-        <link rel="stylesheet" href="css/style.css">
+        <title>Web Component Library</title>
+        <link rel="stylesheet" href="css/tabs.css">
         <link rel="author" href="humans.txt">
     </head>
     <body>
-        <div class="grid-container">
-          <div class="grid-item"></div>
-          <div class="grid-item"></div>
-        </div>
-        <script src="js/main.js"></script>
+        <h1>Web Component Library</h1>
+
+        <article>
+            <h2>Tabs</h2>
+            <div class="tabs">
+                <div class="tab">
+                  <button class="tablinks" onclick="openCity(event, 'London')">London</button>
+                  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                </div>
+
+                <div id="London" class="tabcontent">
+                  <h3>London</h3>
+                  <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="Paris" class="tabcontent">
+                  <h3>Paris</h3>
+                  <p>Paris is the capital of France.</p> 
+                </div>
+
+                <div id="Tokyo" class="tabcontent">
+                  <h3>Tokyo</h3>
+                  <p>Tokyo is the capital of Japan.</p>
+                </div>
+            </div>
+        </article>
+        <script src="js/tabs.js"></script>
     </body>
 </html>
