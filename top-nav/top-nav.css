@@ -1,0 +1,38 @@
+body {margin:0;}
+
+.top-nav {
+  overflow: hidden;
+  list-style: none;
+}
+
+.top-nav .icon {
+  display: none;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-item:not(:first-child) {
+    display: none;
+  }
+  .top-nav .icon {
+    float: right;
+    display: block;
+  }
+  .top-nav.responsive {
+    position: relative;
+  }
+  .top-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .top-nav.responsive .nav-item {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
