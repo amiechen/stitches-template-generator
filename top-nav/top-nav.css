@@ -1,6 +1,14 @@
-body {margin:0;}
+nav {
+  display: grid;
+  grid-template-columns: 70px auto 20px;
+}
+
+.logo {
+  padding: 16px;
+}
 
 .top-nav {
+  padding-left: 0;
   overflow: hidden;
   list-style: none;
 }
@@ -9,28 +17,33 @@ body {margin:0;}
   display: none;
 }
 
+.top-nav .icon.open {
+  border: 1px solid red;
+}
+
 .nav-item {
   display: inline-block;
 }
 
 @media screen and (max-width: 600px) {
-  .nav-item:not(:first-child) {
+  .top-nav {
     display: none;
   }
+
   .top-nav .icon {
-    float: right;
     display: block;
   }
+
   .top-nav.responsive {
     position: relative;
   }
+
   .top-nav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
   .top-nav.responsive .nav-item {
-    float: none;
     display: block;
     text-align: left;
   }
