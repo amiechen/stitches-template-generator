@@ -1,6 +1,6 @@
 nav {
   display: grid;
-  grid-template-columns: 70px auto 20px;
+  grid-template-columns: 70px auto;
 }
 
 .logo {
@@ -13,7 +13,7 @@ nav {
   list-style: none;
 }
 
-.top-nav .icon {
+.icon {
   display: none;
 }
 
@@ -25,27 +25,32 @@ nav {
   display: inline-block;
 }
 
+.nav-item.icon {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
-  .top-nav {
+  nav {
+    grid-template-columns: 70px auto;
+  }
+
+  .nav-item{
     display: none;
   }
 
-  .top-nav .icon {
+  .nav-item.icon {
     display: block;
   }
 
-  .top-nav.responsive {
-    position: relative;
+  .top-nav {
+    text-align: right;
   }
 
-  .top-nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  .icon {
+    display: block;
   }
+
   .top-nav.responsive .nav-item {
     display: block;
-    text-align: left;
   }
-
 }
