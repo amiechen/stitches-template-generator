@@ -1,13 +1,13 @@
-var topNav = document.querySelector('.top-nav');
-var icon = document.querySelector('.icon');
+var topNav = document.querySelector('.menu');
+var icon = document.querySelector('.toggle');
 
 window.addEventListener('load', function(){
   function showNav() {
-    if (topNav.className === 'top-nav') {
+    if (topNav.className === 'menu') {
       topNav.className += ' responsive';
       icon.className += ' open';
     } else {
-      topNav.className = 'top-nav';
+      topNav.className = 'menu';
       icon.classList.remove('open');
     }
   }

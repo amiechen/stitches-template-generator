@@ -7,25 +7,25 @@ nav {
   padding: 16px;
 }
 
-.top-nav {
+.menu {
   padding-left: 0;
   overflow: hidden;
   list-style: none;
 }
 
-.icon {
+.toggle {
   display: none;
 }
 
-.top-nav .icon.open {
+.toggle.open {
   border: 1px solid red;
 }
 
-.nav-item {
+.menu__item {
   display: inline-block;
 }
 
-.nav-item.icon {
+.menu__item.toggle {
   display: none;
 }
 
@@ -34,23 +34,24 @@ nav {
     grid-template-columns: 70px auto;
   }
 
-  .nav-item{
+  .menu__item{
     display: none;
   }
 
-  .nav-item.icon {
+  .menu__item.toggle {
     display: block;
   }
 
-  .top-nav {
+  .menu {
     text-align: right;
   }
 
-  .icon {
+  .toggle {
     display: block;
   }
 
-  .top-nav.responsive .nav-item {
+  .menu.responsive .menu__item {
     display: block;
+    padding: 0 1rem;
   }
 }
