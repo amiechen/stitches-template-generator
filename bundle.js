@@ -41,7 +41,8 @@ function createHTML(html) {
     charset_meta = head.appendChild(doc.createElement("meta")),
     stylesheet = head.appendChild(doc.createElement("link")),
     title = head.appendChild(doc.createElement("title")),
-    body = doc_el.appendChild(doc.createElement("body"));
+    body = doc_el.appendChild(doc.createElement("body")),
+    serializer = new XMLSerializer();
   charset_meta.setAttribute("charset", html.ownerDocument.characterSet);
   stylesheet.setAttribute("rel", "stylesheet");
   stylesheet.setAttribute("href", "stitcher.css");
@@ -49,17 +50,29 @@ function createHTML(html) {
   for (var i = 0; i < html.childNodes.length; i++) {
     body.appendChild(doc.importNode(html.childNodes.item(i), true));
   }
-  console.log(doc);
-  return doc;
+  console.log(serializer.serializeToString(doc));
+  return serializer.serializeToString(doc);
+}
+
+function download(filename, text) {
+  var element = document.createElement("a");
+  element.setAttribute(
+    "href",
+    "data:text/plain;charset=utf-8," + encodeURIComponent(text)
+  );
+  element.setAttribute("download", filename);
+  element.style.display = "none";
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
 }
 
 downloadBtn.addEventListener("click", event => {
-  createHTML(droppable);
-  // var blob = new Blob([droppable.innerHTML], {
-  //   type: "text/html;charset=utf-8"
-  // });
-  // console.log(blob);
-  // FileSaver.saveAs(blob, "stitcher.html");
+  // download("stitcher.html", createHTML(droppable));
+  var blob = new Blob([createHTML(droppable)], {
+    type: "text/html;charset=utf-8"
+  });
+  FileSaver.saveAs(blob, "stitcher.html");
 });
 
 },{"dragula":9,"file-saver":10}],2:[function(require,module,exports){
