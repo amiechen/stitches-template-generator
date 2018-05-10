@@ -10,12 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/amiechen/web-component-library.git"
   },
-  "keywords": [
-    "web",
-    "components",
-    "sort",
-    "builder"
-  ],
+  "keywords": ["web", "components", "sort", "builder"],
   "author": "Amie Chen",
   "license": "MIT",
   "bugs": {
@@ -23,7 +18,6 @@
   },
   "homepage": "https://github.com/amiechen/web-component-library#readme",
   "dependencies": {
-    "dragula": "^3.7.2",
-    "file-saver": "^1.3.8"
+    "dragula": "^3.7.2"
   }
 }
