@@ -1,17 +1,52 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Web Component Library</title>
-    <link rel="author" href="humans.txt">
-  </head>
-  <body>
-    <h1>Web Component Library</h1>
-    <ul>
-      <li><input type="checkbox" /> tabs</li>
-      <li><input type="checkbox"> top nav</li>
-    </ul>
-  </body>
+</head>
+
+<body>
+    <section class="preview">
+        <header class="header">
+            <h1>Stitcher</h1>
+            <button>Download HTML</button>
+        </header>
+        <div class="droppable">
+            Drag Component Here to Generate HTML
+        </div>
+    </section>
+    <section class="filterableSnippets">
+        <div class="filter">
+            <button data-filter="snippet">show all</button>
+            <button data-filter="transition">transition</button>
+            <button data-filter="meow">meow</button>
+        </div>
+        <div class="snippets">
+            <div class="snippet transition">
+                i am a 1
+            </div>
+            <div class="snippet meow">
+                i am a 2
+            </div>
+            <div class="snippet transition">
+                i am a heade3r
+            </div>
+            <div class="snippet transition">
+                i am a 4
+            </div>
+            <div class="snippet meow">
+                i am a 5
+            </div>
+            <div class="snippet transition" data-category="transition">
+                i am a 6
+            </div>
+        </div>
+    </section>
+    <script src="bundle.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #fafbfc;
+  display: flex;
+  height: 100vh;
+}
+.header {
+  display: flex;
+  align-items: center;
+}
+.header h1 {
+  flex: 1;
+}
+.preview {
+  width: 30%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.filterableSnippets {
+  background-color: white;
+  padding: 2rem;
+  flex: 1;
+}
+.droppable {
+  border-radius: 4px;
+  border: 1px solid gray;
+  flex: 1;
+}
+.snippet {
+  border: 1px solid #e9eff4;
+  border-radius: 4px;
+  padding: 1rem;
+}

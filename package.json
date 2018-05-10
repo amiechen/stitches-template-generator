@@ -1,0 +1,28 @@
+{
+  "name": "web-component-library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amiechen/web-component-library.git"
+  },
+  "keywords": [
+    "web",
+    "components",
+    "sort",
+    "builder"
+  ],
+  "author": "Amie Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/amiechen/web-component-library/issues"
+  },
+  "homepage": "https://github.com/amiechen/web-component-library#readme",
+  "dependencies": {
+    "dragula": "^3.7.2"
+  }
+}
