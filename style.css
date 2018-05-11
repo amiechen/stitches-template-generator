@@ -1,3 +1,29 @@
+@font-face {
+  font-family: "AvenirNext";
+  src: url("fonts/AvenirNext/AvenirNext-Bold.woff") format("woff");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("fonts/AvenirNext/AvenirNext-Demi.woff") format("woff");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("fonts/AvenirNext/AvenirNext-Medium.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("fonts/AvenirNext/AvenirNext-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AvenirNext";
+  src: url("fonts/AvenirNext/AvenirNext-UltLt.woff") format("woff");
+  font-weight: 100;
+}
+
 html {
   height: 100%;
 }
@@ -5,17 +31,55 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "AvenirNext", sans-serif;
   background-color: #fafbfc;
   display: flex;
   height: 100vh;
+  font-weight: 400;
+}
+button {
+  border: 1px solid #0000;
+  padding: 0.6rem 1rem 0.4rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  font-family: "AvenirNext", sans-serif;
+  font-weight: 400;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+}
+button:hover {
+  transform: translateY(-6px);
+  transition: 0.3s;
+  box-shadow: 3px 3px 10px rgba(77, 161, 255, 0.07);
+}
+button.btn--primary {
+  background-color: #89937a;
+  color: white;
+}
+button.btn--secondary {
+  background-color: white;
+  border-color: #e9eff4;
+  color: #323c47;
+}
+button.btn--isSelected {
+  border-color: #89937a;
 }
 .header {
   display: flex;
   align-items: center;
+  font-weight: 700;
 }
 .header h1 {
   flex: 1;
+  padding-top: 0.4rem;
+}
+.filter {
+  margin-bottom: 1rem;
+}
+.filter > button {
+  margin-right: 0.4rem;
 }
 .preview {
   width: 30%;
@@ -29,12 +93,15 @@ body {
   flex: 1;
 }
 .droppable {
-  border-radius: 4px;
-  border: 1px solid gray;
   flex: 1;
 }
 .snippet {
   border: 1px solid #e9eff4;
   border-radius: 4px;
   padding: 1rem;
+  background: #ffffff;
+}
+.snippet.snippet--isSelected {
+  border: 1px solid #89937a;
+  box-shadow: 3px 3px 10px rgba(77, 161, 255, 0.07);
 }
