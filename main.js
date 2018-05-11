@@ -33,23 +33,22 @@ filter.addEventListener("click", event => {
 function createHTML(html) {
   var doc_impl = document.implementation,
     dt = doc_impl.createDocumentType("html", " ", " "),
-    doc = doc_impl.createDocument("http://www.w3.org/1999/xhtml", "html", dt),
-    doc_el = doc.documentElement,
-    head = doc_el.appendChild(doc.createElement("head")),
-    charset_meta = head.appendChild(doc.createElement("meta")),
-    stylesheet = head.appendChild(doc.createElement("link")),
-    title = head.appendChild(doc.createElement("title")),
-    body = doc_el.appendChild(doc.createElement("body")),
+    doc = doc_impl.createHTMLDocument("stitcher", "html", dt),
+    charset_meta = doc
+      .querySelector("head")
+      .appendChild(doc.createElement("meta")),
+    stylesheet = doc
+      .querySelector("head")
+      .appendChild(doc.createElement("link")),
     serializer = new XMLSerializer();
+
   charset_meta.setAttribute("charset", html.ownerDocument.characterSet);
   stylesheet.setAttribute("rel", "stylesheet");
   stylesheet.setAttribute("href", "stitcher.css");
-  title.appendChild(doc.createTextNode("stitcher"));
   for (var i = 0; i < html.childNodes.length; i++) {
-    body.appendChild(doc.importNode(html.childNodes.item(i), true));
+    doc.body.appendChild(doc.importNode(html.childNodes.item(i), true));
   }
-  console.log(serializer.serializeToString(doc));
-  return serializer.serializeToString(doc);
+  return doc.documentElement.outerHTML;
 }
 
 function download(filename, text) {
