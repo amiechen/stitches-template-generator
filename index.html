@@ -1,52 +1,72 @@
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" />
-  <link rel="stylesheet" href="style.css">
-  <title>Web Component Library</title>
-</head>
-
-<body>
-  <section class="preview">
-    <header class="header">
-      <h1>Stitcher</h1>
-      <button class="downloadBtn btn--primary">Download HTML</button>
-    </header>
-<!--     <div class="instruction">Drag & Drop to Generate HTML</div> -->
-    <div class="droppable">
-    </div>
-  </section>
-  <section class="filterableSnippets">
-    <div class="filter">
-      <button class="btn--secondary btn--isSelected" data-filter="snippet">All</button>
-      <button class="btn--secondary" data-filter="features">Features</button>
-      <button class="btn--secondary" data-filter="cta">Call To Action</button>
-    </div>
-    <div class="snippets">
-      <div class="snippet features">
-        i am a 1
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stitches.css">
+    <title>Web Component Library</title>
+  </head>
+  <body>
+    <section class="preview">
+      <header class="header">
+        <h3>Stitcher</h3>
+        <button class="downloadBtn btn--primary">Download HTML</button>
+      </header>
+      <!--     <div class="instruction">Drag & Drop to Generate HTML</div> -->
+      <div class="droppable">
       </div>
-      <div class="snippet cta">
-        i am a 2
+    </section>
+    <section class="filterableSnippets">
+      <div class="filter">
+        <button class="btn--secondary btn--isSelected" data-filter="snippet">All</button>
+        <button class="btn--secondary" data-filter="features">Features</button>
+        <button class="btn--secondary" data-filter="content">Content</button>
       </div>
-      <div class="snippet features">
-        i am a heade3r
+      <div class="snippets">
+        <div class="snippets-column snippets--basic">
+          <section class="snippet content st-content-1">
+            <h1>Title Goes Here</h1>
+          </section>
+          <section class="snippet content st-content-2">
+            <h1>Title Goes Here</h1>
+            <h2>Subtitle Goes Here</h2>
+            <a href="">Learn More</a>
+          </section>
+        </div>
+        <div class="snippets-column snippets--medium">
+          <section class="snippet content st-content-3">
+            <h1>Title Goes Here</h1>
+            <h2>Subtitle Goes Here</h2>
+            <a href="">Learn More</a>
+          </section>
+          <section class="snippet content st-content-4">
+            <h1>Title Goes Here</h1>
+            <h2>Subtitle Goes Here</h2>
+            <a href="">Learn More</a>
+            <figure class="">
+              <img alt="image" class="" src="https://source.unsplash.com/user/erondu" />
+            </figure>
+          </section>
+        </div>
+        <div class="snippets-column snippets--complex">
+          <section class="snippet content st-content-5">
+            <h1>Title Goes Here</h1>
+            <h2>Subtitle Goes Here</h2>
+            <a href="">Learn More</a>
+          </section>
+          <section class="snippet content st-content-6">
+            <h1>Title Goes Here</h1>
+            <h2>Subtitle Goes Here</h2>
+            <a href="">Learn More</a>
+            <figure class="">
+              <img alt="image" class="" src="https://source.unsplash.com/user/erondu/1600x900" />
+            </figure>
+          </section>
+        </div>
       </div>
-      <div class="snippet features">
-        i am a 4
-      </div>
-      <div class="snippet cta">
-        i am a 5
-      </div>
-      <div class="snippet features">
-        i am a 6
-      </div>
-    </div>
-  </section>
-  <script src="bundle.js"></script>
-</body>
-
+    </section>
+    <script src="bundle.js"></script>
+  </body>
 </html>

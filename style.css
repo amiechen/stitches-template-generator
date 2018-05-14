@@ -39,12 +39,11 @@ body {
 }
 button {
   border: 1px solid #0000;
-  padding: 0.6rem 1rem 0.4rem 1rem;
-  font-size: 0.8rem;
-  line-height: 1.5;
+  padding: 0.5rem 0.6rem 0.3rem 0.6rem;
   border-radius: 0.25rem;
   font-family: "AvenirNext", sans-serif;
   font-weight: 400;
+  font-size: 0.6rem;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
@@ -70,10 +69,11 @@ button.btn--isSelected {
   display: flex;
   align-items: center;
   font-weight: 700;
+  padding-top: 0.65rem;
 }
-.header h1 {
+.header h3 {
   flex: 1;
-  padding-top: 0.4rem;
+  padding-top: 0.2rem;
   font-weight: 500;
 }
 .filter {
@@ -88,6 +88,7 @@ button.btn--isSelected {
   display: flex;
   flex-direction: column;
   min-width: 260px;
+  justify-content: flex-start;
 }
 .instruction {
   color: #a5b6c8;
@@ -95,13 +96,14 @@ button.btn--isSelected {
 }
 .filterableSnippets {
   background-color: white;
-  padding: 2rem;
+  padding: 1.8rem 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 .droppable {
   flex: 1;
+  margin-top: 1rem;
 }
 .droppable .snippet {
   margin-bottom: -1px;
@@ -111,11 +113,33 @@ button.btn--isSelected {
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1rem;
 }
+.snippets-column {
+  display: flex;
+  flex-direction: column;
+}
 .snippet {
   border: 1px solid #e9eff4;
   padding: 1rem;
   background: #ffffff;
   margin-bottom: 1rem;
+}
+.snippet h1 {
+  font-size: calc(2rem / 2);
+}
+.snippet h2 {
+  font-size: calc(1.6rem / 2);
+}
+.snippet h3 {
+  font-size: calc(1.4rem / 2);
+}
+.snippet h4 {
+  font-size: calc(1.2rem / 2);
+}
+.snippet h5 {
+  font-size: calc(1rem / 2);
+}
+.snippet h6 {
+  font-size: calc(0.8rem/2);
 }
 .snippet.snippet--isSelected {
   border: 1px solid #89937a;
