@@ -1,9 +1,12 @@
-#Stitches
+# Stitches
+
 A simple, fast web app to generate html based on a collection of commonly used user interface patterns.
 
 ![app-screen-shot](./screenshot.png)
 
-To run js locally:
+## Running it locally
+
+For Js:
 
 ```
 npm install
@@ -15,7 +18,7 @@ watchify main.js -o bundle.js -v
 beefy main.js --live
 ```
 
-To run css locally:
+For CSS:
 
 ```
 sass --watch scss/stitches.scss:stitches.css
