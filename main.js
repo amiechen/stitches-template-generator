@@ -2,17 +2,20 @@ const dragula = require("dragula");
 const droppable = document.querySelector(".droppable");
 const snippets = document.querySelector(".snippets");
 const snippet = document.querySelectorAll(".snippet");
+const snippetsColumn = document.querySelectorAll(".snippets-column");
 const filter = document.querySelector(".filter");
 const downloadBtn = document.querySelector(".downloadBtn");
 
-dragula([snippets, droppable], {
-  copy: function(el, source) {
-    return source === snippets;
-  },
-  accepts: function(el, target) {
-    return target !== snippets;
-  }
-});
+for (var i; i < snippetsColumn.length; i++) {
+  dragula([snippetsColumn[i], droppable], {
+    copy: function(el, source) {
+      return source === snippetsColumn[i];
+    },
+    accepts: function(el, target) {
+      return target !== snippetsColumn[i];
+    }
+  });
+}
 
 filter.addEventListener("click", event => {
   // only work with buttons
@@ -44,7 +47,10 @@ function createHTML(html) {
 
   charset_meta.setAttribute("charset", html.ownerDocument.characterSet);
   stylesheet.setAttribute("rel", "stylesheet");
-  stylesheet.setAttribute("href", "stitcher.css");
+  stylesheet.setAttribute(
+    "href",
+    "https://rawgit.com/amiechen/web-component-library/master/stitches.css"
+  ); // prod: https://cdn.rawgit.com/amiechen/web-component-library/master/stitches.css
   for (var i = 0; i < html.childNodes.length; i++) {
     doc.body.appendChild(doc.importNode(html.childNodes.item(i), true));
   }
