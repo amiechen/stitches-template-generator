@@ -2,20 +2,17 @@ const dragula = require("dragula");
 const droppable = document.querySelector(".droppable");
 const snippets = document.querySelector(".snippets");
 const snippet = document.querySelectorAll(".snippet");
-const snippetsColumn = document.querySelectorAll(".snippets-column");
 const filter = document.querySelector(".filter");
 const downloadBtn = document.querySelector(".downloadBtn");
 
-for (var i; i < snippetsColumn.length; i++) {
-  dragula([snippetsColumn[i], droppable], {
-    copy: function(el, source) {
-      return source === snippetsColumn[i];
-    },
-    accepts: function(el, target) {
-      return target !== snippetsColumn[i];
-    }
-  });
-}
+dragula([snippets, droppable], {
+  copy: function(el, source) {
+    return source === snippets;
+  },
+  accepts: function(el, target) {
+    return target !== snippets;
+  }
+});
 
 filter.addEventListener("click", event => {
   // only work with buttons
