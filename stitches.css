@@ -2,17 +2,20 @@ html,
 body {
   height: 100%;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 html {
   font-size: 20px;
   box-sizing: border-box;
-  line-height: 1.5; }
+  line-height: 1.5;
+}
 
 body {
   font-size: 0.8rem;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 h1,
 h2,
@@ -23,53 +26,74 @@ h6 {
   line-height: 1.2;
   margin-bottom: 0;
   margin-top: 0;
-  font-weight: 500; }
+  font-weight: 500;
+}
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 h2 {
   font-size: 1.6rem;
-  line-height: 2; }
+  line-height: 2;
+}
 
 h3 {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+}
 
 h4 {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+}
 
 h5 {
-  font-size: 1rem; }
+  font-size: 1rem;
+}
 
 h6 {
-  font-size: 0.8rem; }
+  font-size: 0.8rem;
+}
 
 figure {
   display: block;
-  margin: 0; }
+  margin: 0;
+}
 
 img {
   object-fit: cover;
   width: 100%;
-  border-style: none; }
+  border-style: none;
+}
 
 /* content */
-.st-content--center {
-  text-align: center; }
+.content {
+  padding: 2rem;
+}
 
-.st-content--left {
-  text-align: left; }
+.content--center {
+  text-align: center;
+}
 
-.st-content--right {
-  text-align: right; }
+.content--left {
+  text-align: left;
+}
+
+.content--right {
+  text-align: right;
+}
 
 /* button */
-.st-button {
+.button {
   border: 1px solid #89937a;
   padding: 0.3em 0.6em 0.2em 0.6em;
   border-radius: 2px;
   white-space: nowrap;
   vertical-align: middle;
-  cursor: pointer; }
+  cursor: pointer;
+}
+
+.figure {
+  margin-top: 1em;
+}
 
 /*# sourceMappingURL=stitches.css.map */

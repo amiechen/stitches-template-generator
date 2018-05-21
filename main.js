@@ -44,10 +44,11 @@ function createHTML(html) {
 
   charset_meta.setAttribute("charset", html.ownerDocument.characterSet);
   stylesheet.setAttribute("rel", "stylesheet");
+  stylesheet.setAttribute("type", "text/css");
   stylesheet.setAttribute(
     "href",
-    "https://rawgit.com/amiechen/web-component-library/master/stitches.css"
-  ); // prod: https://cdn.rawgit.com/amiechen/web-component-library/master/stitches.css
+    "https://cdn.rawgit.com/amiechen/web-component-library/master/stitches.css"
+  );
   for (var i = 0; i < html.childNodes.length; i++) {
     doc.body.appendChild(doc.importNode(html.childNodes.item(i), true));
   }

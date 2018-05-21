@@ -59,22 +59,28 @@ img {
 }
 
 /* content */
-.st-content--center {
+.content {
+  padding: 2rem;
+}
+.content--center {
   text-align: center;
 }
-.st-content--left {
+.content--left {
   text-align: left;
 }
-.st-content--right {
+.content--right {
   text-align: right;
 }
 
 /* button */
-.st-button {
+.button {
   border: 1px solid $brand-primary;
   padding: 0.3em 0.6em 0.2em 0.6em;
   border-radius: 2px;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
+}
+.figure {
+  margin-top: 1em;
 }
