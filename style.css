@@ -109,37 +109,43 @@ button.btn--isSelected {
   margin-bottom: -1px;
 }
 .snippets {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 1rem;
-}
-.snippets-column {
-  display: flex;
-  flex-direction: column;
+  column-count: 3;
+  column-gap: 10px;
+  height: 100vh;
 }
 .snippet {
   border: 1px solid #e9eff4;
   padding: 1rem;
   background: #ffffff;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  cursor: -webkit-grab;
+  cursor: grab;
+  font-size: calc(1.2rem / 4);
+}
+.snippet:hover {
+  border-color: #89937a;
+  transition: 1s;
 }
 .snippet h1 {
-  font-size: calc(2rem / 2);
+  font-size: calc(2rem / 4);
 }
 .snippet h2 {
-  font-size: calc(1.6rem / 2);
+  font-size: calc(1.6rem / 4);
 }
 .snippet h3 {
-  font-size: calc(1.4rem / 2);
+  font-size: calc(1.4rem / 4);
 }
 .snippet h4 {
-  font-size: calc(1.2rem / 2);
+  font-size: calc(1.2rem / 4);
 }
 .snippet h5 {
-  font-size: calc(1rem / 2);
+  font-size: calc(1rem / 4);
 }
 .snippet h6 {
-  font-size: calc(0.8rem/2);
+  font-size: calc(0.8rem / 4);
 }
 .snippet.snippet--isSelected {
   border: 1px solid #89937a;
