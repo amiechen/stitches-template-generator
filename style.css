@@ -150,6 +150,9 @@ button.btn--isSelected {
 .snippet h6 {
   font-size: calc(0.8rem / 4);
 }
+.snippet figure {
+  margin-top: calc(1rem / 4);
+}
 .snippet button:hover {
   transform: none;
   cursor: -webkit-grab;

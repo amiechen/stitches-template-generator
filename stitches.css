@@ -54,17 +54,14 @@ img {
   border-style: none; }
 
 /* content */
-.st-content-1 {
+.st-content--center {
   text-align: center; }
 
-.st-content-2 {
-  text-align: center; }
+.st-content--left {
+  text-align: left; }
 
-.st-content-3 {
-  text-align: center; }
-
-.st-content-4 {
-  text-align: center; }
+.st-content--right {
+  text-align: right; }
 
 /* button */
 .st-button {

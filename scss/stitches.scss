@@ -59,18 +59,16 @@ img {
 }
 
 /* content */
-.st-content-1 {
+.st-content--center {
   text-align: center;
 }
-.st-content-2 {
-  text-align: center;
+.st-content--left {
+  text-align: left;
 }
-.st-content-3 {
-  text-align: center;
+.st-content--right {
+  text-align: right;
 }
-.st-content-4 {
-  text-align: center;
-}
+
 /* button */
 .st-button {
   border: 1px solid $brand-primary;
