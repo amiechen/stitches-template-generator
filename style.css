@@ -121,43 +121,9 @@ button.btn--isSelected {
   break-inside: avoid;
   cursor: -webkit-grab;
   cursor: grab;
-  /*  font-size: calc(1.2rem / 4);*/
 }
 .snippet:hover {
   border-color: #89937a;
   transition: 1s;
 }
-/*.snippet * {
-  font-size: calc(1.2rem / 4);
-}
-.snippet h1 {
-  font-size: calc(2rem / 4);
-}
-.snippet h2 {
-  font-size: calc(1.6rem / 4);
-}
-.snippet h3 {
-  font-size: calc(1.4rem / 4);
-}
-.snippet h4 {
-  font-size: calc(1.2rem / 4);
-}
-.snippet h5 {
-  font-size: calc(1rem / 4);
-}
-.snippet h6 {
-  font-size: calc(0.8rem / 4);
-}
-.snippet figure {
-  margin-top: calc(1rem / 4);
-}
-.snippet button:hover {
-  transform: none;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
 
-.snippet.snippet--isSelected {
-  border: 1px solid #89937a;
-  box-shadow: 3px 3px 10px rgba(77, 161, 255, 0.07);
-}*/

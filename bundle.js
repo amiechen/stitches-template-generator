@@ -69,8 +69,16 @@ function download(filename, text) {
   document.body.removeChild(element);
 }
 
+function getHTMLBlocks(droppable) {
+  let html = "";
+  // TODO
+  // stitch HTML blocks in /templates based on images in droppable
+  return html;
+}
+
 downloadBtn.addEventListener("click", event => {
-  download("stitcher.html", createHTML(droppable));
+  let generatedBlocks = getHTMLBlocks(droppable);
+  download("stitcher.html", createHTML(generatedBlocks));
 });
 
 },{"dragula":9}],2:[function(require,module,exports){

@@ -1,0 +1,57 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 20px;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+body {
+  font-size: 0.8rem;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 0;
+  font-weight: 500;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+h3 {
+  font-size: 1.4rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.8rem;
+}
+figure {
+  display: block;
+  margin: 0;
+}
+img {
+  object-fit: cover;
+  width: 100%;
+  border-style: none;
+}
