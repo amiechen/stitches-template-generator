@@ -69,13 +69,18 @@ function download(filename, text) {
 }
 
 function getHTMLBlocks(droppable) {
-  let html = "";
+  let selectedBlocks = droppable.querySelectorAll(".snippet");
+  let templateDr = `./templates`;
+  selectedBlocks.forEach(block => {
+    console.log(block.id);
+  });
   // TODO
   // stitch HTML blocks in /templates based on images in droppable
-  return html;
+  return selectedBlocks;
 }
 
 downloadBtn.addEventListener("click", event => {
   let generatedBlocks = getHTMLBlocks(droppable);
-  download("stitcher.html", createHTML(generatedBlocks));
+  console.log(generatedBlocks);
+  // download("stitcher.html", createHTML(generatedBlocks));
 });
