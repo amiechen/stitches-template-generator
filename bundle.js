@@ -31,58 +31,55 @@ filter.addEventListener("click", event => {
   }
 });
 
-function createHTML(html) {
-  var doc_impl = document.implementation,
-    dt = doc_impl.createDocumentType("html", " ", " "),
-    doc = doc_impl.createHTMLDocument("stitcher", "html", dt),
-    charset_meta = doc
-      .querySelector("head")
-      .appendChild(doc.createElement("meta")),
-    stylesheet = doc
-      .querySelector("head")
-      .appendChild(doc.createElement("link")),
-    serializer = new XMLSerializer();
+// function createHTML(html) {
+//   var doc_impl = document.implementation,
+//     dt = doc_impl.createDocumentType("html", " ", " "),
+//     doc = doc_impl.createHTMLDocument("stitcher", "html", dt),
+//     charset_meta = doc
+//       .querySelector("head")
+//       .appendChild(doc.createElement("meta")),
+//     stylesheet = doc
+//       .querySelector("head")
+//       .appendChild(doc.createElement("link")),
+//     serializer = new XMLSerializer();
 
-  charset_meta.setAttribute("charset", html.ownerDocument.characterSet);
-  stylesheet.setAttribute("rel", "stylesheet");
-  stylesheet.setAttribute("type", "text/css");
-  stylesheet.setAttribute(
-    "href",
-    "https://cdn.rawgit.com/amiechen/web-component-library/master/stitches.css"
-  );
-  for (var i = 0; i < html.childNodes.length; i++) {
-    doc.body.appendChild(doc.importNode(html.childNodes.item(i), true));
-  }
-  return doc.documentElement.outerHTML;
-}
+//   charset_meta.setAttribute("charset", html.ownerDocument.characterSet);
+//   stylesheet.setAttribute("rel", "stylesheet");
+//   stylesheet.setAttribute("type", "text/css");
+//   stylesheet.setAttribute(
+//     "href",
+//     "https://cdn.rawgit.com/amiechen/web-component-library/master/stitches.css"
+//   );
+//   for (var i = 0; i < html.childNodes.length; i++) {
+//     doc.body.appendChild(doc.importNode(html.childNodes.item(i), true));
+//   }
+//   return doc.documentElement.outerHTML;
+// }
 
-function download(filename, text) {
-  var element = document.createElement("a");
-  element.setAttribute(
-    "href",
-    "data:text/html;charset=utf-8," + encodeURIComponent(text)
-  );
-  element.setAttribute("download", filename);
-  element.style.display = "none";
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-}
-
-function getHTMLBlocks(droppable) {
-  let selectedBlocks = droppable.querySelectorAll(".snippet");
-  let templateDr = `./templates`;
-  selectedBlocks.forEach(block => {
-    console.log(block.id);
-  });
-  // TODO
-  // stitch HTML blocks in /templates based on images in droppable
-  return selectedBlocks;
-}
+// function download(filename, text) {
+//   var element = document.createElement("a");
+//   element.setAttribute(
+//     "href",
+//     "data:text/html;charset=utf-8," + encodeURIComponent(text)
+//   );
+//   element.setAttribute("download", filename);
+//   element.style.display = "none";
+//   document.body.appendChild(element);
+//   element.click();
+//   document.body.removeChild(element);
+// }
 
 downloadBtn.addEventListener("click", event => {
-  let generatedBlocks = getHTMLBlocks(droppable);
-  console.log(generatedBlocks);
+  let selectedBlocks = [];
+  let snippetsInDroppable = droppable.querySelectorAll(".snippet");
+  for (var i = 0; i < snippetsInDroppable.length; i++) {
+    selectedBlocks.push(snippetsInDroppable[i].id);
+  }
+  fetch("/download", {
+    method: "POST",
+    body: JSON.stringify({ data: selectedBlocks }),
+    headers: { "Content-Type": "application/json" }
+  });
   // download("stitcher.html", createHTML(generatedBlocks));
 });
 
