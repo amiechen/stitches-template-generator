@@ -3,6 +3,20 @@ const app = express();
 const path = require("path");
 const fs = require("fs");
 const bodyParser = require("body-parser");
+const http = require("http");
+const stitchesCSSPath =
+  "https://rawgit.com/amiechen/web-component-library/master/stitches.css";
+
+let stitchesHTML = html => `<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href=${stitchesCSSPath}>
+    <title>Stitches</title>
+  </head>
+  <body class="st">${html}</body>
+</html>`;
 
 app.use(express.static("."));
 app.use(bodyParser.json());
@@ -23,13 +37,10 @@ app.post("/download", (req, res) => {
     );
   });
 
-  fs.writeFile(file, html);
-  res.download(file, "stitches.html", function(err) {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log("you downloaded a file!");
-    }
+  fs.writeFile(file, stitchesHTML(html), "utf8", err => {
+    if (err) throw err;
+    res.download(file);
+    res.json({ data: stitchesHTML(html) });
   });
 });
 
