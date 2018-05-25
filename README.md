@@ -10,16 +10,11 @@ For Js:
 
 ```
 npm install
+npm start
 
 /*in one terminal window*/
 watchify main.js -o bundle.js -v
 
 /*in another terminal window*/
 beefy main.js --live
-```
-
-For CSS:
-
-```
-sass --watch scss/stitches.scss:stitches.css
 ```

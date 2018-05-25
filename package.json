@@ -6,13 +6,24 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "build:css": "postcss stitches.css -o public/stitches.css",
+    "watch:css": "postcss stitches.css -o public/stitches.css -w",
+    "start": "npm run watch:css & node app.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amiechen/web-component-library.git"
   },
-  "keywords": ["web", "components", "sort", "builder"],
+  "keywords": [
+    "web",
+    "components",
+    "sort",
+    "builder",
+    "tailwind",
+    "tailwindcss",
+    "postcss",
+    "stitches"
+  ],
   "author": "Amie Chen",
   "license": "MIT",
   "bugs": {
@@ -23,5 +34,15 @@
     "body-parser": "^1.18.3",
     "dragula": "^3.7.2",
     "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "postcss-cli": "^5.0.0",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^11.1.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^3.0.0",
+    "postcss-simple-vars": "^4.1.0",
+    "tailwindcss": "^0.5.3"
   }
 }
