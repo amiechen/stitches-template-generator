@@ -8,30 +8,39 @@
     <title>Web Component Library</title>
   </head>
   <body class="st">
-    <section class="preview">
-      <header class="header">
-        <h3>Stitcher</h3>
-        <button class="downloadBtn btn--primary">Download HTML</button>
-      </header>
-      <!-- <div class="instruction">Drag & Drop to Generate HTML</div> -->
-      <div class="droppable"></div>
-    </section>
     <section class="filterableSnippets">
+      <h1>Stitches</h1>
       <div class="filter">
+        <!-- General -->
         <button class="btn--secondary btn--isSelected" data-filter="snippet">All</button>
-        <button class="btn--secondary" data-filter="st-header">Header</button>
-        <button class="btn--secondary" data-filter="st-hero">Hero</button>
+        <button class="btn--secondary" data-filter="st-nav">Navigation</button>
         <button class="btn--secondary" data-filter="st-footer">Footer</button>
+        <button class="btn--secondary" data-filter="st-form">Form</button>
+        <button class="btn--secondary" data-filter="st-list">List</button>
+        <!-- Marketing -->
+        <button class="btn--secondary" data-filter="st-hero">Hero</button>
+        <button class="btn--secondary" data-filter="st-features">Features</button>
+        <button class="btn--secondary" data-filter="st-pricing">Pricing</button>
+        <button class="btn--secondary" data-filter="st-articles">Articles</button>
+        <button class="btn--secondary" data-filter="st-magazine">Magazine</button>
+        <button class="btn--secondary" data-filter="st-quotes">Quotes</button>
+        <!-- Application -->
+        <button class="btn--secondary" data-filter="st-progress">Progress Bar</button>
+        <button class="btn--secondary" data-filter="st-feed">Feed</button>
+        <button class="btn--secondary" data-filter="st-comments">Comments</button>
+        <button class="btn--secondary" data-filter="st-notification">Notification</button>
+        <button class="btn--secondary" data-filter="st-stats">Stats</button>
+        <button class="btn--secondary" data-filter="st-profile">Profile</button>
       </div>
       <div class="snippets">
-        <img src="./blocks/header-1.png" alt="" id="header-1" class="snippet st-header">
-        <img src="./blocks/header-2.png" alt="" id="header-2" class="snippet st-header">
-        <img src="./blocks/header-3.png" alt="" id="header-3" class="snippet st-header">
-        <img src="./blocks/header-4.png" alt="" id="header-4" class="snippet st-header">
-        <img src="./blocks/header-5.png" alt="" id="header-5" class="snippet st-header">
-        <img src="./blocks/header-6.png" alt="" id="header-6" class="snippet st-header">
-        <img src="./blocks/header-7.png" alt="" id="header-7" class="snippet st-header">
-        <img src="./blocks/header-8.png" alt="" id="header-8" class="snippet st-header">
+        <img src="./blocks/nav-1.png" alt="" id="nav-1" class="snippet st-nav">
+        <img src="./blocks/nav-2.png" alt="" id="nav-2" class="snippet st-nav">
+        <img src="./blocks/nav-3.png" alt="" id="nav-3" class="snippet st-nav">
+        <img src="./blocks/nav-4.png" alt="" id="nav-4" class="snippet st-nav">
+        <img src="./blocks/nav-5.png" alt="" id="nav-5" class="snippet st-nav">
+        <img src="./blocks/nav-6.png" alt="" id="nav-6" class="snippet st-nav">
+        <img src="./blocks/nav-7.png" alt="" id="nav-7" class="snippet st-nav">
+        <img src="./blocks/nav-8.png" alt="" id="nav-8" class="snippet st-nav">
         <img src="./blocks/hero-1.png" alt="" id="hero-1" class="snippet st-hero">
         <img src="./blocks/hero-2.png" alt="" id="hero-2" class="snippet st-hero">
         <img src="./blocks/hero-3.png" alt="" id="hero-3" class="snippet st-hero">
@@ -40,6 +49,13 @@
         <img src="./blocks/footer-2.png" alt="" id="footer-2" class="snippet st-footer">
         <img src="./blocks/footer-3.png" alt="" id="footer-3" class="snippet st-footer">
       </div>
+    </section>
+    <section class="preview">
+      <header class="header">
+        <button class="downloadBtn btn--primary">Download HTML</button>
+      </header>
+      <!-- <div class="instruction">Drag & Drop to Generate HTML</div> -->
+      <div class="droppable"></div>
     </section>
     <script src="bundle.js"></script>
   </body>
