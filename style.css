@@ -73,7 +73,6 @@ button.btn--isSelected {
 }
 .header h3 {
   flex: 1;
-  padding-top: 0.2rem;
   font-weight: 500;
 }
 .filter {
@@ -111,7 +110,7 @@ button.btn--isSelected {
 .snippets {
   column-count: 2;
   column-gap: 10px;
-  overflow-y: scroll;
+  padding-right: 4px;
 }
 .snippet {
   border: 1px solid #e9eff4;
@@ -121,9 +120,9 @@ button.btn--isSelected {
   break-inside: avoid;
   cursor: -webkit-grab;
   cursor: grab;
+  width: 100%;
 }
 .snippet:hover {
   border-color: #89937a;
   transition: 1s;
 }
-

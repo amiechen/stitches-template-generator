@@ -164,9 +164,11 @@ module.exports = {
   */
 
   screens: {
-    sm: "576px",
+    xs: "320px",
+    sm: "480px",
     md: "768px",
-    lg: "992px"
+    lg: "992px",
+    xl: "1200px"
   },
 
   /*
@@ -188,20 +190,7 @@ module.exports = {
   */
 
   fonts: {
-    sans: [
-      "system-ui",
-      "BlinkMacSystemFont",
-      "-apple-system",
-      "Segoe UI",
-      "Roboto",
-      "Oxygen",
-      "Ubuntu",
-      "Cantarell",
-      "Fira Sans",
-      "Droid Sans",
-      "Helvetica Neue",
-      "sans-serif"
-    ],
+    sans: ["avenir next", "avenir", "Helvetica Neue", "sans-serif"],
     serif: [
       "Constantia",
       "Lucida Bright",

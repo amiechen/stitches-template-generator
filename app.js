@@ -15,7 +15,7 @@ let stitchesHTML = html => `<html lang="en">
     <link rel="stylesheet" type="text/css" href=${stitchesCSSPath}>
     <title>Stitches</title>
   </head>
-  <body class="st">${html}</body>
+  <body>${html}</body>
 </html>`;
 
 app.use(express.static("."));
