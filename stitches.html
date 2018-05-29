@@ -6,21 +6,28 @@
     <link rel="stylesheet" type="text/css" href=./public/stitches.css>
     <title>Stitches</title>
   </head>
-  <body class="st"><nav class="font-sans bg-white text-center my-4 mx-auto max-w-sm overflow-hidden">
-  <img src="https://randomuser.me/api/portraits/women/44.jpg" class="h-16 sm:h-24 my-4 rounded-full" alt="avatar">
-  <p class="text-xl">Hyperyolo</p>
-  <p class="text-sm text-grey-dark leading-loose">twitter/@hyperyolo</p>
-</nav><nav class="font-sans bg-white text-center flex justify-between my-4 mx-auto max-w-xl overflow-hidden">
-  <a href="/" class="block text-left">
-    <img src="https://randomuser.me/api/portraits/women/44.jpg" class="h-12 sm:h-12 rounded-full" alt="avatar">
-  </a>
-  <ul class="text-sm text-grey-dark list-reset flex items-center">
-    <li><a href="#" class="inline-block py-2 px-3 text-grey-darkest hover:text-grey-dark no-underline">Products</a></li>
-    <li><a href="#" class="inline-block py-2 px-3 text-grey-darkest hover:text-grey-dark no-underline">Pricing</a></li>
-    <li><a href="#" class="inline-block py-2 px-3 text-grey-darkest hover:text-grey-dark no-underline">FAQs</a></li>
-    <button class="bg-transparent hover:bg-grey-darkest text-grey-darkest hover:text-white ml-4 py-2 px-3 border border-grey hover:border-transparent rounded">
-    Button
-    </button>
-  </ul>
-</nav></body>
+  <body>
+    <form class="font-sans text-sm rounded w-full max-w-xs mx-auto my-8 px-8 pt-6 pb-8">
+      <div class="relative border rounded mb-4 shadow appearance-none label-floating">
+        <input class="w-full py-2 px-3 text-grey-darker leading-normal rounded" id="username" type="text" placeholder="Username">
+        <label class="absolute block text-grey-darker pin-t pin-l w-full px-3 py-2 leading-normal" for="username">
+          Username
+        </label>
+      </div>
+      <div class="relative border rounded mb-4 shadow appearance-none label-floating">
+        <input class="w-full py-2 px-3 text-grey-darker leading-normal rounded" id="password" type="password" placeholder="Password">
+        <label class="absolute block text-grey-darker pin-t pin-l w-full px-3 py-2 leading-normal" for="password">
+          Password
+        </label>
+      </div>
+      <div class="flex items-center justify-between">
+        <button class="bg-grey-darkest hover:bg-black text-white py-2 px-4 rounded" type="button">
+        Sign In
+        </button>
+        <a class="inline-block align-baseline text-grey hover:text-grey-darker" href="#">
+          Forgot Password?
+        </a>
+      </div>
+    </form>
+  </body>
 </html>

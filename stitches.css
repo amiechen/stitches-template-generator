@@ -2,3 +2,14 @@
 @tailwind utilities;
 @tailwind components;
 @tailwind utilities;
+
+/* Stitches classes */
+.label-floating input:not(:placeholder-shown) {
+  padding-top: 1.4rem;
+}
+.label-floating input:not(:placeholder-shown) ~ label {
+  padding-top: 0.4rem;
+  font-size: 0.7rem;
+  transition: all 0.1s ease-in-out;
+  color: #8795a1;
+}

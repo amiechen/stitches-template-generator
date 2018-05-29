@@ -8479,6 +8479,19 @@ button,
   z-index: auto;
 }
 
+/* Stitches classes */
+
+.label-floating input:not(:placeholder-shown) {
+  padding-top: 1.4rem;
+}
+
+.label-floating input:not(:placeholder-shown) ~ label {
+  padding-top: .4rem;
+  font-size: .7rem;
+  transition: all .1s ease-in-out;
+  color: #8795a1;
+}
+
 @media (min-width: 320px) {
   .xs\:list-reset {
     list-style: none;

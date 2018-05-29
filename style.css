@@ -105,6 +105,14 @@ button.btn--isSelected {
 }
 .droppable .snippet {
   margin-bottom: -1px;
+  border: none;
+}
+.droppable .snippet:hover {
+  transform: scale(1.03);
+  transition: 0.1s;
+  box-shadow: 3px 3px 10px rgba(77, 161, 255, 0.07);
+  border: 1px solid #e9eff4;
+  border-radius: 3px;
 }
 .snippets {
   column-count: 2;
