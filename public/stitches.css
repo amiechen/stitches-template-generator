@@ -8525,6 +8525,10 @@ button,
           transform: translate(-50%, -50%);
 }
 
+.tracking-extrawide {
+  letter-spacing: 1em;
+}
+
 @media (min-width: 320px) {
   .xs\:list-reset {
     list-style: none;
