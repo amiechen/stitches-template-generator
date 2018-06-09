@@ -45,6 +45,18 @@
   transform: translate(-50%, -50%);
 }
 
+.transform-scale-1-1 {
+  transform: scale(1.1);
+}
+
+.hover\:transform-scale-subtle:hover {
+  transform: scale(1.03);
+}
+
+.transition-normal {
+  transition: 0.2s ease-in-out;
+}
+
 .tracking-extrawide {
   letter-spacing: 1em;
 }
