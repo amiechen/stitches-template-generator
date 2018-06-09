@@ -15655,6 +15655,34 @@ button,
   .xs\:z-auto {
     z-index: auto;
   }
+
+  .xs\:order-first {
+    order: -1;
+  }
+
+  .xs\:order-0 {
+    order: 0;
+  }
+
+  .xs\:order-1 {
+    order: 1;
+  }
+
+  .xs\:order-2 {
+    order: 2;
+  }
+
+  .xs\:order-3 {
+    order: 3;
+  }
+
+  .xs\:order-4 {
+    order: 4;
+  }
+
+  .xs\:order-last {
+    order: 99999;
+  }
 }
 
 @media (min-width: 480px) {
@@ -23112,6 +23140,34 @@ button,
 
   .sm\:z-auto {
     z-index: auto;
+  }
+
+  .sm\:order-first {
+    order: -1;
+  }
+
+  .sm\:order-0 {
+    order: 0;
+  }
+
+  .sm\:order-1 {
+    order: 1;
+  }
+
+  .sm\:order-2 {
+    order: 2;
+  }
+
+  .sm\:order-3 {
+    order: 3;
+  }
+
+  .sm\:order-4 {
+    order: 4;
+  }
+
+  .sm\:order-last {
+    order: 99999;
   }
 }
 
@@ -30571,6 +30627,34 @@ button,
   .md\:z-auto {
     z-index: auto;
   }
+
+  .md\:order-first {
+    order: -1;
+  }
+
+  .md\:order-0 {
+    order: 0;
+  }
+
+  .md\:order-1 {
+    order: 1;
+  }
+
+  .md\:order-2 {
+    order: 2;
+  }
+
+  .md\:order-3 {
+    order: 3;
+  }
+
+  .md\:order-4 {
+    order: 4;
+  }
+
+  .md\:order-last {
+    order: 99999;
+  }
 }
 
 @media (min-width: 992px) {
@@ -38029,6 +38113,34 @@ button,
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:order-first {
+    order: -1;
+  }
+
+  .lg\:order-0 {
+    order: 0;
+  }
+
+  .lg\:order-1 {
+    order: 1;
+  }
+
+  .lg\:order-2 {
+    order: 2;
+  }
+
+  .lg\:order-3 {
+    order: 3;
+  }
+
+  .lg\:order-4 {
+    order: 4;
+  }
+
+  .lg\:order-last {
+    order: 99999;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -45486,5 +45598,33 @@ button,
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:order-first {
+    order: -1;
+  }
+
+  .xl\:order-0 {
+    order: 0;
+  }
+
+  .xl\:order-1 {
+    order: 1;
+  }
+
+  .xl\:order-2 {
+    order: 2;
+  }
+
+  .xl\:order-3 {
+    order: 3;
+  }
+
+  .xl\:order-4 {
+    order: 4;
+  }
+
+  .xl\:order-last {
+    order: 99999;
   }
 }

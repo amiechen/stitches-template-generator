@@ -14,33 +14,34 @@
   color: #8795a1;
 }
 
-.order-first {
-  order: -1;
-}
+@responsive {
+  .order-first {
+    order: -1;
+  }
 
-.order-0 {
-  order: 0;
-}
+  .order-0 {
+    order: 0;
+  }
 
-.order-1 {
-  order: 1;
-}
+  .order-1 {
+    order: 1;
+  }
 
-.order-2 {
-  order: 2;
-}
+  .order-2 {
+    order: 2;
+  }
 
-.order-3 {
-  order: 3;
-}
+  .order-3 {
+    order: 3;
+  }
 
-.order-4 {
-  order: 4;
+  .order-4 {
+    order: 4;
+  }
+  .order-last {
+    order: 99999;
+  }
 }
-.order-last {
-  order: 99999;
-}
-
 .-translate-50-50 {
   transform: translate(-50%, -50%);
 }
