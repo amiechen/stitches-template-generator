@@ -1,26 +1,26 @@
 @font-face {
   font-family: "AvenirNext";
-  src: url("fonts/AvenirNext/AvenirNext-Bold.woff") format("woff");
+  src: url("../fonts/AvenirNext/AvenirNext-Bold.woff") format("woff");
   font-weight: 700;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url("fonts/AvenirNext/AvenirNext-Demi.woff") format("woff");
+  src: url("../fonts/AvenirNext/AvenirNext-Demi.woff") format("woff");
   font-weight: 600;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url("fonts/AvenirNext/AvenirNext-Medium.woff") format("woff");
+  src: url("../fonts/AvenirNext/AvenirNext-Medium.woff") format("woff");
   font-weight: 500;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url("fonts/AvenirNext/AvenirNext-Regular.woff") format("woff");
+  src: url("../fonts/AvenirNext/AvenirNext-Regular.woff") format("woff");
   font-weight: 400;
 }
 @font-face {
   font-family: "AvenirNext";
-  src: url("fonts/AvenirNext/AvenirNext-UltLt.woff") format("woff");
+  src: url("../fonts/AvenirNext/AvenirNext-UltLt.woff") format("woff");
   font-weight: 100;
 }
 
@@ -59,6 +59,7 @@
   .order-3 {
     order: 3;
   }
+}
 
 .label-floating input:not(:placeholder-shown) ~ label {
   padding-top: 0.4rem;
@@ -70,6 +71,7 @@
 @responsive {
   .order-first {
     order: -1;
+  }
   .order-4 {
     order: 4;
   }
