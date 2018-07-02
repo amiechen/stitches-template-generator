@@ -2,7 +2,7 @@
   "name": "stitches",
   "version": "0.5.0",
   "description": "web designers and developers' secret weapon. Generate html based on a collection of commonly used user interface patterns with no third-party css framework",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss stitches.css -o public/stitches.css",
