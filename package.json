@@ -8,7 +8,7 @@
     "build:css": "postcss stitches.css -o public/stitches.css",
     "watch:css": "postcss stitches.css -o public/stitches.css -w",
     "bundle": "browserify client.js -o bundle.js",
-    "start": "node app.js"
+    "start": "npm run bundle & npm run watch:css & node app.js"
   },
   "repository": {
     "type": "git",

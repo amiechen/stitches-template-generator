@@ -918,34 +918,6 @@ button,
   background-color: #e6e8ff;
 }
 
-.bg-purple-darkest {
-  background-color: #21183c;
-}
-
-.bg-purple-darker {
-  background-color: #382b5f;
-}
-
-.bg-purple-dark {
-  background-color: #794acf;
-}
-
-.bg-purple {
-  background-color: #9561e2;
-}
-
-.bg-purple-light {
-  background-color: #a779e9;
-}
-
-.bg-purple-lighter {
-  background-color: #d6bbfc;
-}
-
-.bg-purple-lightest {
-  background-color: #f3ebff;
-}
-
 .bg-pink-darkest {
   background-color: #451225;
 }
@@ -1208,34 +1180,6 @@ button,
 
 .hover\:bg-indigo-lightest:hover {
   background-color: #e6e8ff;
-}
-
-.hover\:bg-purple-darkest:hover {
-  background-color: #21183c;
-}
-
-.hover\:bg-purple-darker:hover {
-  background-color: #382b5f;
-}
-
-.hover\:bg-purple-dark:hover {
-  background-color: #794acf;
-}
-
-.hover\:bg-purple:hover {
-  background-color: #9561e2;
-}
-
-.hover\:bg-purple-light:hover {
-  background-color: #a779e9;
-}
-
-.hover\:bg-purple-lighter:hover {
-  background-color: #d6bbfc;
-}
-
-.hover\:bg-purple-lightest:hover {
-  background-color: #f3ebff;
 }
 
 .hover\:bg-pink-darkest:hover {
@@ -1564,34 +1508,6 @@ button,
 
 .border-indigo-lightest {
   border-color: #e6e8ff;
-}
-
-.border-purple-darkest {
-  border-color: #21183c;
-}
-
-.border-purple-darker {
-  border-color: #382b5f;
-}
-
-.border-purple-dark {
-  border-color: #794acf;
-}
-
-.border-purple {
-  border-color: #9561e2;
-}
-
-.border-purple-light {
-  border-color: #a779e9;
-}
-
-.border-purple-lighter {
-  border-color: #d6bbfc;
-}
-
-.border-purple-lightest {
-  border-color: #f3ebff;
 }
 
 .border-pink-darkest {
@@ -3711,34 +3627,6 @@ button,
   color: #e6e8ff;
 }
 
-.text-purple-darkest {
-  color: #21183c;
-}
-
-.text-purple-darker {
-  color: #382b5f;
-}
-
-.text-purple-dark {
-  color: #794acf;
-}
-
-.text-purple {
-  color: #9561e2;
-}
-
-.text-purple-light {
-  color: #a779e9;
-}
-
-.text-purple-lighter {
-  color: #d6bbfc;
-}
-
-.text-purple-lightest {
-  color: #f3ebff;
-}
-
 .text-pink-darkest {
   color: #451225;
 }
@@ -4001,34 +3889,6 @@ button,
 
 .hover\:text-indigo-lightest:hover {
   color: #e6e8ff;
-}
-
-.hover\:text-purple-darkest:hover {
-  color: #21183c;
-}
-
-.hover\:text-purple-darker:hover {
-  color: #382b5f;
-}
-
-.hover\:text-purple-dark:hover {
-  color: #794acf;
-}
-
-.hover\:text-purple:hover {
-  color: #9561e2;
-}
-
-.hover\:text-purple-light:hover {
-  color: #a779e9;
-}
-
-.hover\:text-purple-lighter:hover {
-  color: #d6bbfc;
-}
-
-.hover\:text-purple-lightest:hover {
-  color: #f3ebff;
 }
 
 .hover\:text-pink-darkest:hover {
@@ -4798,34 +4658,6 @@ button,
     background-color: #e6e8ff;
   }
 
-  .xs\:bg-purple-darkest {
-    background-color: #21183c;
-  }
-
-  .xs\:bg-purple-darker {
-    background-color: #382b5f;
-  }
-
-  .xs\:bg-purple-dark {
-    background-color: #794acf;
-  }
-
-  .xs\:bg-purple {
-    background-color: #9561e2;
-  }
-
-  .xs\:bg-purple-light {
-    background-color: #a779e9;
-  }
-
-  .xs\:bg-purple-lighter {
-    background-color: #d6bbfc;
-  }
-
-  .xs\:bg-purple-lightest {
-    background-color: #f3ebff;
-  }
-
   .xs\:bg-pink-darkest {
     background-color: #451225;
   }
@@ -5088,34 +4920,6 @@ button,
 
   .xs\:hover\:bg-indigo-lightest:hover {
     background-color: #e6e8ff;
-  }
-
-  .xs\:hover\:bg-purple-darkest:hover {
-    background-color: #21183c;
-  }
-
-  .xs\:hover\:bg-purple-darker:hover {
-    background-color: #382b5f;
-  }
-
-  .xs\:hover\:bg-purple-dark:hover {
-    background-color: #794acf;
-  }
-
-  .xs\:hover\:bg-purple:hover {
-    background-color: #9561e2;
-  }
-
-  .xs\:hover\:bg-purple-light:hover {
-    background-color: #a779e9;
-  }
-
-  .xs\:hover\:bg-purple-lighter:hover {
-    background-color: #d6bbfc;
-  }
-
-  .xs\:hover\:bg-purple-lightest:hover {
-    background-color: #f3ebff;
   }
 
   .xs\:hover\:bg-pink-darkest:hover {
@@ -5444,34 +5248,6 @@ button,
 
   .xs\:border-indigo-lightest {
     border-color: #e6e8ff;
-  }
-
-  .xs\:border-purple-darkest {
-    border-color: #21183c;
-  }
-
-  .xs\:border-purple-darker {
-    border-color: #382b5f;
-  }
-
-  .xs\:border-purple-dark {
-    border-color: #794acf;
-  }
-
-  .xs\:border-purple {
-    border-color: #9561e2;
-  }
-
-  .xs\:border-purple-light {
-    border-color: #a779e9;
-  }
-
-  .xs\:border-purple-lighter {
-    border-color: #d6bbfc;
-  }
-
-  .xs\:border-purple-lightest {
-    border-color: #f3ebff;
   }
 
   .xs\:border-pink-darkest {
@@ -7583,34 +7359,6 @@ button,
     color: #e6e8ff;
   }
 
-  .xs\:text-purple-darkest {
-    color: #21183c;
-  }
-
-  .xs\:text-purple-darker {
-    color: #382b5f;
-  }
-
-  .xs\:text-purple-dark {
-    color: #794acf;
-  }
-
-  .xs\:text-purple {
-    color: #9561e2;
-  }
-
-  .xs\:text-purple-light {
-    color: #a779e9;
-  }
-
-  .xs\:text-purple-lighter {
-    color: #d6bbfc;
-  }
-
-  .xs\:text-purple-lightest {
-    color: #f3ebff;
-  }
-
   .xs\:text-pink-darkest {
     color: #451225;
   }
@@ -7873,34 +7621,6 @@ button,
 
   .xs\:hover\:text-indigo-lightest:hover {
     color: #e6e8ff;
-  }
-
-  .xs\:hover\:text-purple-darkest:hover {
-    color: #21183c;
-  }
-
-  .xs\:hover\:text-purple-darker:hover {
-    color: #382b5f;
-  }
-
-  .xs\:hover\:text-purple-dark:hover {
-    color: #794acf;
-  }
-
-  .xs\:hover\:text-purple:hover {
-    color: #9561e2;
-  }
-
-  .xs\:hover\:text-purple-light:hover {
-    color: #a779e9;
-  }
-
-  .xs\:hover\:text-purple-lighter:hover {
-    color: #d6bbfc;
-  }
-
-  .xs\:hover\:text-purple-lightest:hover {
-    color: #f3ebff;
   }
 
   .xs\:hover\:text-pink-darkest:hover {
@@ -8594,34 +8314,6 @@ button,
     background-color: #e6e8ff;
   }
 
-  .sm\:bg-purple-darkest {
-    background-color: #21183c;
-  }
-
-  .sm\:bg-purple-darker {
-    background-color: #382b5f;
-  }
-
-  .sm\:bg-purple-dark {
-    background-color: #794acf;
-  }
-
-  .sm\:bg-purple {
-    background-color: #9561e2;
-  }
-
-  .sm\:bg-purple-light {
-    background-color: #a779e9;
-  }
-
-  .sm\:bg-purple-lighter {
-    background-color: #d6bbfc;
-  }
-
-  .sm\:bg-purple-lightest {
-    background-color: #f3ebff;
-  }
-
   .sm\:bg-pink-darkest {
     background-color: #451225;
   }
@@ -8884,34 +8576,6 @@ button,
 
   .sm\:hover\:bg-indigo-lightest:hover {
     background-color: #e6e8ff;
-  }
-
-  .sm\:hover\:bg-purple-darkest:hover {
-    background-color: #21183c;
-  }
-
-  .sm\:hover\:bg-purple-darker:hover {
-    background-color: #382b5f;
-  }
-
-  .sm\:hover\:bg-purple-dark:hover {
-    background-color: #794acf;
-  }
-
-  .sm\:hover\:bg-purple:hover {
-    background-color: #9561e2;
-  }
-
-  .sm\:hover\:bg-purple-light:hover {
-    background-color: #a779e9;
-  }
-
-  .sm\:hover\:bg-purple-lighter:hover {
-    background-color: #d6bbfc;
-  }
-
-  .sm\:hover\:bg-purple-lightest:hover {
-    background-color: #f3ebff;
   }
 
   .sm\:hover\:bg-pink-darkest:hover {
@@ -9240,34 +8904,6 @@ button,
 
   .sm\:border-indigo-lightest {
     border-color: #e6e8ff;
-  }
-
-  .sm\:border-purple-darkest {
-    border-color: #21183c;
-  }
-
-  .sm\:border-purple-darker {
-    border-color: #382b5f;
-  }
-
-  .sm\:border-purple-dark {
-    border-color: #794acf;
-  }
-
-  .sm\:border-purple {
-    border-color: #9561e2;
-  }
-
-  .sm\:border-purple-light {
-    border-color: #a779e9;
-  }
-
-  .sm\:border-purple-lighter {
-    border-color: #d6bbfc;
-  }
-
-  .sm\:border-purple-lightest {
-    border-color: #f3ebff;
   }
 
   .sm\:border-pink-darkest {
@@ -11379,34 +11015,6 @@ button,
     color: #e6e8ff;
   }
 
-  .sm\:text-purple-darkest {
-    color: #21183c;
-  }
-
-  .sm\:text-purple-darker {
-    color: #382b5f;
-  }
-
-  .sm\:text-purple-dark {
-    color: #794acf;
-  }
-
-  .sm\:text-purple {
-    color: #9561e2;
-  }
-
-  .sm\:text-purple-light {
-    color: #a779e9;
-  }
-
-  .sm\:text-purple-lighter {
-    color: #d6bbfc;
-  }
-
-  .sm\:text-purple-lightest {
-    color: #f3ebff;
-  }
-
   .sm\:text-pink-darkest {
     color: #451225;
   }
@@ -11669,34 +11277,6 @@ button,
 
   .sm\:hover\:text-indigo-lightest:hover {
     color: #e6e8ff;
-  }
-
-  .sm\:hover\:text-purple-darkest:hover {
-    color: #21183c;
-  }
-
-  .sm\:hover\:text-purple-darker:hover {
-    color: #382b5f;
-  }
-
-  .sm\:hover\:text-purple-dark:hover {
-    color: #794acf;
-  }
-
-  .sm\:hover\:text-purple:hover {
-    color: #9561e2;
-  }
-
-  .sm\:hover\:text-purple-light:hover {
-    color: #a779e9;
-  }
-
-  .sm\:hover\:text-purple-lighter:hover {
-    color: #d6bbfc;
-  }
-
-  .sm\:hover\:text-purple-lightest:hover {
-    color: #f3ebff;
   }
 
   .sm\:hover\:text-pink-darkest:hover {
@@ -12390,34 +11970,6 @@ button,
     background-color: #e6e8ff;
   }
 
-  .md\:bg-purple-darkest {
-    background-color: #21183c;
-  }
-
-  .md\:bg-purple-darker {
-    background-color: #382b5f;
-  }
-
-  .md\:bg-purple-dark {
-    background-color: #794acf;
-  }
-
-  .md\:bg-purple {
-    background-color: #9561e2;
-  }
-
-  .md\:bg-purple-light {
-    background-color: #a779e9;
-  }
-
-  .md\:bg-purple-lighter {
-    background-color: #d6bbfc;
-  }
-
-  .md\:bg-purple-lightest {
-    background-color: #f3ebff;
-  }
-
   .md\:bg-pink-darkest {
     background-color: #451225;
   }
@@ -12680,34 +12232,6 @@ button,
 
   .md\:hover\:bg-indigo-lightest:hover {
     background-color: #e6e8ff;
-  }
-
-  .md\:hover\:bg-purple-darkest:hover {
-    background-color: #21183c;
-  }
-
-  .md\:hover\:bg-purple-darker:hover {
-    background-color: #382b5f;
-  }
-
-  .md\:hover\:bg-purple-dark:hover {
-    background-color: #794acf;
-  }
-
-  .md\:hover\:bg-purple:hover {
-    background-color: #9561e2;
-  }
-
-  .md\:hover\:bg-purple-light:hover {
-    background-color: #a779e9;
-  }
-
-  .md\:hover\:bg-purple-lighter:hover {
-    background-color: #d6bbfc;
-  }
-
-  .md\:hover\:bg-purple-lightest:hover {
-    background-color: #f3ebff;
   }
 
   .md\:hover\:bg-pink-darkest:hover {
@@ -13036,34 +12560,6 @@ button,
 
   .md\:border-indigo-lightest {
     border-color: #e6e8ff;
-  }
-
-  .md\:border-purple-darkest {
-    border-color: #21183c;
-  }
-
-  .md\:border-purple-darker {
-    border-color: #382b5f;
-  }
-
-  .md\:border-purple-dark {
-    border-color: #794acf;
-  }
-
-  .md\:border-purple {
-    border-color: #9561e2;
-  }
-
-  .md\:border-purple-light {
-    border-color: #a779e9;
-  }
-
-  .md\:border-purple-lighter {
-    border-color: #d6bbfc;
-  }
-
-  .md\:border-purple-lightest {
-    border-color: #f3ebff;
   }
 
   .md\:border-pink-darkest {
@@ -15175,34 +14671,6 @@ button,
     color: #e6e8ff;
   }
 
-  .md\:text-purple-darkest {
-    color: #21183c;
-  }
-
-  .md\:text-purple-darker {
-    color: #382b5f;
-  }
-
-  .md\:text-purple-dark {
-    color: #794acf;
-  }
-
-  .md\:text-purple {
-    color: #9561e2;
-  }
-
-  .md\:text-purple-light {
-    color: #a779e9;
-  }
-
-  .md\:text-purple-lighter {
-    color: #d6bbfc;
-  }
-
-  .md\:text-purple-lightest {
-    color: #f3ebff;
-  }
-
   .md\:text-pink-darkest {
     color: #451225;
   }
@@ -15465,34 +14933,6 @@ button,
 
   .md\:hover\:text-indigo-lightest:hover {
     color: #e6e8ff;
-  }
-
-  .md\:hover\:text-purple-darkest:hover {
-    color: #21183c;
-  }
-
-  .md\:hover\:text-purple-darker:hover {
-    color: #382b5f;
-  }
-
-  .md\:hover\:text-purple-dark:hover {
-    color: #794acf;
-  }
-
-  .md\:hover\:text-purple:hover {
-    color: #9561e2;
-  }
-
-  .md\:hover\:text-purple-light:hover {
-    color: #a779e9;
-  }
-
-  .md\:hover\:text-purple-lighter:hover {
-    color: #d6bbfc;
-  }
-
-  .md\:hover\:text-purple-lightest:hover {
-    color: #f3ebff;
   }
 
   .md\:hover\:text-pink-darkest:hover {
@@ -16186,34 +15626,6 @@ button,
     background-color: #e6e8ff;
   }
 
-  .lg\:bg-purple-darkest {
-    background-color: #21183c;
-  }
-
-  .lg\:bg-purple-darker {
-    background-color: #382b5f;
-  }
-
-  .lg\:bg-purple-dark {
-    background-color: #794acf;
-  }
-
-  .lg\:bg-purple {
-    background-color: #9561e2;
-  }
-
-  .lg\:bg-purple-light {
-    background-color: #a779e9;
-  }
-
-  .lg\:bg-purple-lighter {
-    background-color: #d6bbfc;
-  }
-
-  .lg\:bg-purple-lightest {
-    background-color: #f3ebff;
-  }
-
   .lg\:bg-pink-darkest {
     background-color: #451225;
   }
@@ -16476,34 +15888,6 @@ button,
 
   .lg\:hover\:bg-indigo-lightest:hover {
     background-color: #e6e8ff;
-  }
-
-  .lg\:hover\:bg-purple-darkest:hover {
-    background-color: #21183c;
-  }
-
-  .lg\:hover\:bg-purple-darker:hover {
-    background-color: #382b5f;
-  }
-
-  .lg\:hover\:bg-purple-dark:hover {
-    background-color: #794acf;
-  }
-
-  .lg\:hover\:bg-purple:hover {
-    background-color: #9561e2;
-  }
-
-  .lg\:hover\:bg-purple-light:hover {
-    background-color: #a779e9;
-  }
-
-  .lg\:hover\:bg-purple-lighter:hover {
-    background-color: #d6bbfc;
-  }
-
-  .lg\:hover\:bg-purple-lightest:hover {
-    background-color: #f3ebff;
   }
 
   .lg\:hover\:bg-pink-darkest:hover {
@@ -16832,34 +16216,6 @@ button,
 
   .lg\:border-indigo-lightest {
     border-color: #e6e8ff;
-  }
-
-  .lg\:border-purple-darkest {
-    border-color: #21183c;
-  }
-
-  .lg\:border-purple-darker {
-    border-color: #382b5f;
-  }
-
-  .lg\:border-purple-dark {
-    border-color: #794acf;
-  }
-
-  .lg\:border-purple {
-    border-color: #9561e2;
-  }
-
-  .lg\:border-purple-light {
-    border-color: #a779e9;
-  }
-
-  .lg\:border-purple-lighter {
-    border-color: #d6bbfc;
-  }
-
-  .lg\:border-purple-lightest {
-    border-color: #f3ebff;
   }
 
   .lg\:border-pink-darkest {
@@ -18971,34 +18327,6 @@ button,
     color: #e6e8ff;
   }
 
-  .lg\:text-purple-darkest {
-    color: #21183c;
-  }
-
-  .lg\:text-purple-darker {
-    color: #382b5f;
-  }
-
-  .lg\:text-purple-dark {
-    color: #794acf;
-  }
-
-  .lg\:text-purple {
-    color: #9561e2;
-  }
-
-  .lg\:text-purple-light {
-    color: #a779e9;
-  }
-
-  .lg\:text-purple-lighter {
-    color: #d6bbfc;
-  }
-
-  .lg\:text-purple-lightest {
-    color: #f3ebff;
-  }
-
   .lg\:text-pink-darkest {
     color: #451225;
   }
@@ -19261,34 +18589,6 @@ button,
 
   .lg\:hover\:text-indigo-lightest:hover {
     color: #e6e8ff;
-  }
-
-  .lg\:hover\:text-purple-darkest:hover {
-    color: #21183c;
-  }
-
-  .lg\:hover\:text-purple-darker:hover {
-    color: #382b5f;
-  }
-
-  .lg\:hover\:text-purple-dark:hover {
-    color: #794acf;
-  }
-
-  .lg\:hover\:text-purple:hover {
-    color: #9561e2;
-  }
-
-  .lg\:hover\:text-purple-light:hover {
-    color: #a779e9;
-  }
-
-  .lg\:hover\:text-purple-lighter:hover {
-    color: #d6bbfc;
-  }
-
-  .lg\:hover\:text-purple-lightest:hover {
-    color: #f3ebff;
   }
 
   .lg\:hover\:text-pink-darkest:hover {
@@ -19982,34 +19282,6 @@ button,
     background-color: #e6e8ff;
   }
 
-  .xl\:bg-purple-darkest {
-    background-color: #21183c;
-  }
-
-  .xl\:bg-purple-darker {
-    background-color: #382b5f;
-  }
-
-  .xl\:bg-purple-dark {
-    background-color: #794acf;
-  }
-
-  .xl\:bg-purple {
-    background-color: #9561e2;
-  }
-
-  .xl\:bg-purple-light {
-    background-color: #a779e9;
-  }
-
-  .xl\:bg-purple-lighter {
-    background-color: #d6bbfc;
-  }
-
-  .xl\:bg-purple-lightest {
-    background-color: #f3ebff;
-  }
-
   .xl\:bg-pink-darkest {
     background-color: #451225;
   }
@@ -20272,34 +19544,6 @@ button,
 
   .xl\:hover\:bg-indigo-lightest:hover {
     background-color: #e6e8ff;
-  }
-
-  .xl\:hover\:bg-purple-darkest:hover {
-    background-color: #21183c;
-  }
-
-  .xl\:hover\:bg-purple-darker:hover {
-    background-color: #382b5f;
-  }
-
-  .xl\:hover\:bg-purple-dark:hover {
-    background-color: #794acf;
-  }
-
-  .xl\:hover\:bg-purple:hover {
-    background-color: #9561e2;
-  }
-
-  .xl\:hover\:bg-purple-light:hover {
-    background-color: #a779e9;
-  }
-
-  .xl\:hover\:bg-purple-lighter:hover {
-    background-color: #d6bbfc;
-  }
-
-  .xl\:hover\:bg-purple-lightest:hover {
-    background-color: #f3ebff;
   }
 
   .xl\:hover\:bg-pink-darkest:hover {
@@ -20628,34 +19872,6 @@ button,
 
   .xl\:border-indigo-lightest {
     border-color: #e6e8ff;
-  }
-
-  .xl\:border-purple-darkest {
-    border-color: #21183c;
-  }
-
-  .xl\:border-purple-darker {
-    border-color: #382b5f;
-  }
-
-  .xl\:border-purple-dark {
-    border-color: #794acf;
-  }
-
-  .xl\:border-purple {
-    border-color: #9561e2;
-  }
-
-  .xl\:border-purple-light {
-    border-color: #a779e9;
-  }
-
-  .xl\:border-purple-lighter {
-    border-color: #d6bbfc;
-  }
-
-  .xl\:border-purple-lightest {
-    border-color: #f3ebff;
   }
 
   .xl\:border-pink-darkest {
@@ -22767,34 +21983,6 @@ button,
     color: #e6e8ff;
   }
 
-  .xl\:text-purple-darkest {
-    color: #21183c;
-  }
-
-  .xl\:text-purple-darker {
-    color: #382b5f;
-  }
-
-  .xl\:text-purple-dark {
-    color: #794acf;
-  }
-
-  .xl\:text-purple {
-    color: #9561e2;
-  }
-
-  .xl\:text-purple-light {
-    color: #a779e9;
-  }
-
-  .xl\:text-purple-lighter {
-    color: #d6bbfc;
-  }
-
-  .xl\:text-purple-lightest {
-    color: #f3ebff;
-  }
-
   .xl\:text-pink-darkest {
     color: #451225;
   }
@@ -23057,34 +22245,6 @@ button,
 
   .xl\:hover\:text-indigo-lightest:hover {
     color: #e6e8ff;
-  }
-
-  .xl\:hover\:text-purple-darkest:hover {
-    color: #21183c;
-  }
-
-  .xl\:hover\:text-purple-darker:hover {
-    color: #382b5f;
-  }
-
-  .xl\:hover\:text-purple-dark:hover {
-    color: #794acf;
-  }
-
-  .xl\:hover\:text-purple:hover {
-    color: #9561e2;
-  }
-
-  .xl\:hover\:text-purple-light:hover {
-    color: #a779e9;
-  }
-
-  .xl\:hover\:text-purple-lighter:hover {
-    color: #d6bbfc;
-  }
-
-  .xl\:hover\:text-purple-lightest:hover {
-    color: #f3ebff;
   }
 
   .xl\:hover\:text-pink-darkest:hover {

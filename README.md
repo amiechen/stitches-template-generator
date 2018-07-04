@@ -8,27 +8,9 @@ A simple, fast web app to generate html based on a collection of commonly used u
 
 ## Running it locally
 
-For Site:
-```
-jekyll serve
-```
-
-For Js:
 
 ```
-
-/*in one terminal window*/
-watchify app.js -o bundle.js -v
-
-/*in another terminal window*/
-beefy app.js --live
-```
-
-
-To compile css:
-
-```
-npm install
 npm start
 ```
-this will watch stitches.css changes and compile it to public/stitches.css
+this compiles `client.js` into `bundle.js`, run `postcss` for css changes as well as starts the node app.
+
