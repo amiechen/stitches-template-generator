@@ -5,7 +5,7 @@ const fs = require("fs");
 const bodyParser = require("body-parser");
 const http = require("http");
 const stitchesCSSPath =
-  "https://rawgit.com/amiechen/web-component-library/master/stitches.css";
+  "https://rawgit.com/amiechen/web-component-library/master/public/stitches.css";
 
 let stitchesHTML = html => `<html lang="en">
   <head>
@@ -13,6 +13,7 @@ let stitchesHTML = html => `<html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href=${stitchesCSSPath}>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <title>Stitches</title>
   </head>
   <body>${html}</body>
