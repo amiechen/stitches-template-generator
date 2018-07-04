@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss stitches.css -o public/stitches.css",
     "watch:css": "postcss stitches.css -o public/stitches.css -w",
-    "start": "npm run watch:css & node app.js"
+    "watch:clientjs": "browserify client.js -o bundle.js"
+    "start": "npm run watch:css & npm run watch:clientjs & node app.js"
   },
   "repository": {
     "type": "git",
