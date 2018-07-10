@@ -53,16 +53,7 @@ let colors = {
   "grey-light": "#dae1e7",
   "grey-lighter": "#f1f5f8",
   "grey-lightest": "#f8fafc",
-  white: "#ffffff",
-
-  "blue-darkest": "#12283a",
-  "blue-darker": "#1c3d5a",
-  "blue-dark": "#2779bd",
-  blue: "#3490dc",
-  "blue-light": "#6cb2eb",
-  "blue-lighter": "#bcdefa",
-  "blue-lightest": "#eff8ff",
-
+  white: "#ffffff"
 };
 
 module.exports = {
@@ -732,11 +723,11 @@ module.exports = {
   */
 
   modules: {
-    appearance: [],
-    backgroundAttachment: [],
+    appearance: false,
+    backgroundAttachment: false,
     backgroundColors: ["responsive", "hover"],
     backgroundPosition: ["responsive"],
-    backgroundRepeat: ["responsive"],
+    backgroundRepeat: false,
     backgroundSize: [],
     borderColors: ["responsive"],
     borderRadius: ["responsive"],
@@ -745,7 +736,7 @@ module.exports = {
     cursor: ["responsive", "hover"],
     display: ["responsive"],
     flexbox: ["responsive"],
-    float: ["responsive"],
+    float: [],
     fonts: ["responsive"],
     fontWeights: ["responsive", "hover"],
     height: ["responsive"],

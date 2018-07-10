@@ -1,9 +1,10 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 const dragula = require("dragula");
+// const imagesLoaded = require("imagesloaded");
 const droppable = document.querySelector(".droppable");
-const snippets = document.querySelector(".snippets");
-const snippet = document.querySelectorAll(".snippet");
-const filter = document.querySelector(".filter");
+const snippets = document.querySelector(".js-snippets");
+const snippet = document.querySelectorAll(".js-snippet");
+const filter = document.querySelector(".js-filter");
 const downloadBtn = document.querySelector(".downloadBtn");
 
 dragula([snippets, droppable], {
@@ -31,6 +32,25 @@ filter.addEventListener("click", event => {
   }
 });
 
+function masonry(grid, gridCell, gridGutter, dGridCol, tGridCol, mGridCol) {
+  var g = document.querySelector(grid),
+      gc = document.querySelectorAll(gridCell),
+      gcLength = gc.length,
+      gHeight = 0,
+      i;
+  
+  for(i=0; i<gcLength; ++i) {
+    gHeight+=gc[i].offsetHeight+parseInt(gridGutter);
+  }
+  
+  if(window.screen.width >= 1024)
+    g.style.height = gHeight/dGridCol + gHeight/(gcLength+1) + "px";
+  else if(window.screen.width < 1024 && window.screen.width >= 768)
+    g.style.height = gHeight/tGridCol + gHeight/(gcLength+1) + "px";
+  else
+    g.style.height = gHeight/mGridCol + gHeight/(gcLength+1) + "px";
+}
+
 function download(filename, text) {
   var element = document.createElement("a");
   element.setAttribute(
@@ -46,9 +66,8 @@ function download(filename, text) {
 
 downloadBtn.addEventListener("click", event => {
   let selectedBlocks = [];
-  let snippetsInDroppable = droppable.querySelectorAll(".snippet");
-  for (var i = 0; i < snippetsInDroppable.length; i++) {
-    selectedBlocks.push(snippetsInDroppable[i].id);
+  for (var i = 0; i < snippet.length; i++) {
+    selectedBlocks.push(snippet[i].id);
   }
   fetch("/download", {
     method: "POST",
@@ -67,6 +86,18 @@ downloadBtn.addEventListener("click", event => {
     });
 });
 
+
+// imagesLoaded( snippets, function( instance ) {
+//   console.log('all images are loaded');
+//   ["resize", "load"].forEach(function(event) {
+//     window.addEventListener(event, function() {
+//       imagesLoaded( document.querySelector('.masonry'), function() {
+//         // A maonsry grid with 8px gutter, with 3 columns on desktop, 2 on tablet, and 1 column on mobile devices.
+//         masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
+//       });
+//     });
+//   });
+// });
 },{"dragula":9}],2:[function(require,module,exports){
 module.exports = function atoa (a, n) { return Array.prototype.slice.call(a, n); }
 
