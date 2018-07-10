@@ -1,10 +1,10 @@
 const dragula = require("dragula");
-// const imagesLoaded = require("imagesloaded");
-const droppable = document.querySelector(".droppable");
+const imagesLoaded = require("imagesloaded");
+const droppable = document.querySelector(".js-droppable");
 const snippets = document.querySelector(".js-snippets");
 const snippet = document.querySelectorAll(".js-snippet");
 const filter = document.querySelector(".js-filter");
-const downloadBtn = document.querySelector(".downloadBtn");
+const downloadBtn = document.querySelector(".js-download");
 
 dragula([snippets, droppable], {
   copy: function(el, source) {
@@ -29,6 +29,8 @@ filter.addEventListener("click", event => {
       snippet[i].style.display = "none";
     }
   }
+
+  masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
 });
 
 function masonry(grid, gridCell, gridGutter, dGridCol, tGridCol, mGridCol) {
@@ -65,8 +67,9 @@ function download(filename, text) {
 
 downloadBtn.addEventListener("click", event => {
   let selectedBlocks = [];
-  for (var i = 0; i < snippet.length; i++) {
-    selectedBlocks.push(snippet[i].id);
+  let selectedSnippets = document.querySelectorAll(".js-droppable > .js-snippet");
+  for (var i = 0; i < selectedSnippets.length; i++) {
+    selectedBlocks.push(selectedSnippets[i].id);
   }
   fetch("/download", {
     method: "POST",
@@ -86,14 +89,14 @@ downloadBtn.addEventListener("click", event => {
 });
 
 
-// imagesLoaded( snippets, function( instance ) {
-//   console.log('all images are loaded');
-//   ["resize", "load"].forEach(function(event) {
-//     window.addEventListener(event, function() {
-//       imagesLoaded( document.querySelector('.masonry'), function() {
-//         // A maonsry grid with 8px gutter, with 3 columns on desktop, 2 on tablet, and 1 column on mobile devices.
-//         masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
-//       });
-//     });
-//   });
-// });
+imagesLoaded( snippets, function( instance ) {
+  console.log('all images are loaded');
+  ["resize", "load"].forEach(function(event) {
+    window.addEventListener(event, function() {
+      imagesLoaded( snippets, function() {
+        // A maonsry grid with 0px gutter, with 2 columns on desktop, 2 on tablet, and 1 column on mobile devices.
+        masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
+      });
+    });
+  });
+});

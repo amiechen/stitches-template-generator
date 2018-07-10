@@ -6,15 +6,21 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.2/dragula.min.css" />
     <link rel="stylesheet" type="text/css" href="./public/stitches.css">
+    <style type="text/css">
+        .js-droppable > .js-snippet {
+            width: 100%;
+            padding: 0;
+        }
+    </style>
     <title>Web Component Library</title>
   </head>
-  <body class="flex font-sans">
-    <section class="bg-white p-8 w-2/3">
+  <body class="overflow-hidden font-sans">
+    <section class="fixed pin-l pin-t pin-b overflow-y-scroll bg-white p-8 w-2/3">
       <h1 class="font-black mb-4">Stitches</h1>
       <div class="mx-2 mb-4 js-filter">
         <!-- General -->
-        <button class="bg-transparent hover:bg-black text-sm text-black font-semibold hover:text-white py-1 px-2 mr-2 my-1 border border-black hover:border-transparent rounded" data-filter="snippet">All</button>
-        <button class="bg-transparent hover:bg-black text-sm text-black font-semibold hover:text-white py-1 px-2 mr-2 my-1 border border-black hover:border-transparent rounded" data-filter="st-nav">Navigation</button>
+        <button class="bg-transparent hover:bg-black text-sm text-black font-semibold hover:text-white py-1 px-2 mr-2 my-1 border border-black hover:border-transparent rounded" data-filter="js-snippet">All</button>
+        <button class="bg-transparent hover:bg-black text-sm text-black font-semibold hover:text-white py-1 px-2 mr-2 my-1 border border-black hover:border-transparent rounded" data-filter="st-navigation">Navigation</button>
         <button class="bg-transparent hover:bg-black text-sm text-black font-semibold hover:text-white py-1 px-2 mr-2 my-1 border border-black hover:border-transparent rounded" data-filter="st-footer">Footer</button>
         <button class="bg-transparent hover:bg-black text-sm text-black font-semibold hover:text-white py-1 px-2 mr-2 my-1 border border-black hover:border-transparent rounded" data-filter="st-form">Form</button>
         <button class="bg-transparent hover:bg-black text-sm text-black font-semibold hover:text-white py-1 px-2 mr-2 my-1 border border-black hover:border-transparent rounded" data-filter="st-list">List</button>
@@ -33,110 +39,110 @@
         <button class="bg-transparent hover:bg-black text-sm text-black font-semibold hover:text-white py-1 px-2 mr-2 my-1 border border-black hover:border-transparent rounded" data-filter="st-tab">Tab</button>
       </div>
       <div class="flex flex-wrap flex-col items-start justify-start js-snippets">
-        <figure class="js-snippet w-1/2 p-2 st-navigation">
-            <img src="./blocks/navigation-1.png" alt="" id="navigation-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-navigation" id="navigation-1">
+            <img src="./blocks/navigation-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-navigation">
-            <img src="./blocks/navigation-2.png" alt="" id="navigation-2" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-navigation" id="navigation-2">
+            <img src="./blocks/navigation-2.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-navigation">
-            <img src="./blocks/navigation-3.png" alt="" id="navigation-3" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-navigation" id="navigation-3">
+            <img src="./blocks/navigation-3.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-navigation">
-            <img src="./blocks/navigation-4.png" alt="" id="navigation-4" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-navigation" id="navigation-4">
+            <img src="./blocks/navigation-4.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-hero">
-            <img src="./blocks/hero-1.png" alt="" id="hero-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-hero" id="hero-1">
+            <img src="./blocks/hero-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-hero">
-            <img src="./blocks/hero-2.png" alt="" id="hero-2" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-hero" id="hero-2">
+            <img src="./blocks/hero-2.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-hero">
-            <img src="./blocks/hero-3.png" alt="" id="hero-3" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-hero" id="hero-3">
+            <img src="./blocks/hero-3.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-footer">
-            <img src="./blocks/footer-1.png" alt="" id="footer-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-footer" id="footer-1">
+            <img src="./blocks/footer-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-footer">
-            <img src="./blocks/footer-2.png" alt="" id="footer-2" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-footer" id="footer-2">
+            <img src="./blocks/footer-2.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-footer">
-            <img src="./blocks/footer-3.png" alt="" id="footer-3" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-footer" id="footer-3">
+            <img src="./blocks/footer-3.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-feature">
-            <img src="./blocks/features-1.png" alt="" id="features-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-feature" id="features-1">
+            <img src="./blocks/features-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-feature">
-            <img src="./blocks/features-2.png" alt="" id="features-2" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-feature" id="features-2">
+            <img src="./blocks/features-2.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-feature">
-            <img src="./blocks/features-3.png" alt="" id="features-3" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-feature" id="features-3">
+            <img src="./blocks/features-3.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-feature">
-            <img src="./blocks/features-4.png" alt="" id="features-4" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-feature" id="features-4">
+            <img src="./blocks/features-4.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-feature">
-            <img src="./blocks/features-5.png" alt="" id="features-5" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-feature" id="features-5">
+            <img src="./blocks/features-5.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-feature">
-            <img src="./blocks/features-6.png" alt="" id="features-6" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-feature" id="features-6">
+            <img src="./blocks/features-6.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-pricing">
-            <img src="./blocks/pricing-1.png" alt="" id="pricing-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-pricing" id="pricing-1">
+            <img src="./blocks/pricing-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-article">
-            <img src="./blocks/articles-1.png" alt="" id="articles-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-article" id="articles-1">
+            <img src="./blocks/articles-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-article">
-            <img src="./blocks/articles-2.png" alt="" id="articles-2" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-article" id="articles-2">
+            <img src="./blocks/articles-2.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-cta">
-            <img src="./blocks/cta-1.png" alt="" id="cta-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-cta" id="cta-1">
+            <img src="./blocks/cta-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-cta">
-            <img src="./blocks/cta-2.png" alt="" id="cta-2" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-cta" id="cta-2">
+            <img src="./blocks/cta-2.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-form">
-            <img src="./blocks/form-1.png" alt="" id="form-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-form" id="form-1">
+            <img src="./blocks/form-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-progress">
-            <img src="./blocks/progress-1.png" alt="" id="progress-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-progress" id="progress-1">
+            <img src="./blocks/progress-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-list">
-            <img src="./blocks/list-1.png" alt="" id="list-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-list" id="list-1">
+            <img src="./blocks/list-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-feed">
-            <img src="./blocks/feed-1.png" alt="" id="feed-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-feed" id="feed-1">
+            <img src="./blocks/feed-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-notification">
-            <img src="./blocks/notification-1.png" alt="" id="notification-1" class="js-snippet">
+        <figure class="js-snippet w-1/2 p-2 st-notification" id="notification-1">
+            <img src="./blocks/notification-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-notification">
-            <img src="./blocks/notification-2.png" alt="" id="notification-2" class="js-snippet">
+        <figure class="js-snippet w-1/2 p-2 st-notification" id="notification-2">
+            <img src="./blocks/notification-2.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-stats">
-            <img src="./blocks/stats-1.png" alt="" id="stats-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-stats" id="stats-1">
+            <img src="./blocks/stats-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-stats">
-            <img src="./blocks/stats-2.png" alt="" id="stats-2" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-stats" id="stats-2">
+            <img src="./blocks/stats-2.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-cards">
-            <img src="./blocks/cards-1.png" alt="" id="cards-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-cards" id="cards-1">
+            <img src="./blocks/cards-1.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-cards">
-            <img src="./blocks/cards-2.png" alt="" id="cards-2" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-cards" id="cards-2">
+            <img src="./blocks/cards-2.png" alt="" class="border border-grey-light">
         </figure>
-        <figure class="js-snippet w-1/2 p-2 st-tab">
-            <img src="./blocks/tabs-1.png" alt="" id="tab-1" class="border border-grey-light">
+        <figure class="js-snippet w-1/2 p-2 st-tab" id="tab-1">
+            <img src="./blocks/tabs-1.png" alt="" class="border border-grey-light">
         </figure>
       </div>
     </section>
-    <section class="p-8 w-1/3">
-      <header class="header">
-        <button class="downloadBtn btn--primary">Download Stitched HTML</button>
+    <section class="bg-grey-light p-8 w-1/3 flex flex-col fixed pin-t pin-b pin-r overflow-y-scroll">
+      <header class="mb-4">
+        <button class="js-download">Download Stitched HTML</button>
       </header>
       <!-- <div class="instruction">Drag & Drop to Generate HTML</div> -->
-      <div class="droppable"></div>
+      <div class="flex flex-col flex-1 border js-droppable"></div>
     </section>
     <script src="bundle.js"></script>
   </body>

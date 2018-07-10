@@ -4046,6 +4046,24 @@ button,
     flex-shrink: 0;
   }
 
+  .xs\:float-right {
+    float: right;
+  }
+
+  .xs\:float-left {
+    float: left;
+  }
+
+  .xs\:float-none {
+    float: none;
+  }
+
+  .xs\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .xs\:font-sans {
     font-family: Muli, Helvetica Neue, sans-serif;
   }
@@ -6516,6 +6534,24 @@ button,
 
   .sm\:flex-no-shrink {
     flex-shrink: 0;
+  }
+
+  .sm\:float-right {
+    float: right;
+  }
+
+  .sm\:float-left {
+    float: left;
+  }
+
+  .sm\:float-none {
+    float: none;
+  }
+
+  .sm\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   .sm\:font-sans {
@@ -8990,6 +9026,24 @@ button,
     flex-shrink: 0;
   }
 
+  .md\:float-right {
+    float: right;
+  }
+
+  .md\:float-left {
+    float: left;
+  }
+
+  .md\:float-none {
+    float: none;
+  }
+
+  .md\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .md\:font-sans {
     font-family: Muli, Helvetica Neue, sans-serif;
   }
@@ -11462,6 +11516,24 @@ button,
     flex-shrink: 0;
   }
 
+  .lg\:float-right {
+    float: right;
+  }
+
+  .lg\:float-left {
+    float: left;
+  }
+
+  .lg\:float-none {
+    float: none;
+  }
+
+  .lg\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .lg\:font-sans {
     font-family: Muli, Helvetica Neue, sans-serif;
   }
@@ -13932,6 +14004,24 @@ button,
 
   .xl\:flex-no-shrink {
     flex-shrink: 0;
+  }
+
+  .xl\:float-right {
+    float: right;
+  }
+
+  .xl\:float-left {
+    float: left;
+  }
+
+  .xl\:float-none {
+    float: none;
+  }
+
+  .xl\:clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   .xl\:font-sans {

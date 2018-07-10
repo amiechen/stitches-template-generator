@@ -736,7 +736,7 @@ module.exports = {
     cursor: ["responsive", "hover"],
     display: ["responsive"],
     flexbox: ["responsive"],
-    float: [],
+    float: ["responsive"],
     fonts: ["responsive"],
     fontWeights: ["responsive", "hover"],
     height: ["responsive"],
