@@ -5,15 +5,21 @@ const snippets = document.querySelector(".js-snippets");
 const snippet = document.querySelectorAll(".js-snippet");
 const filter = document.querySelector(".js-filter");
 const downloadBtn = document.querySelector(".js-download");
+const deleteBtn = document.querySelector(".js-delete-btn");
 
 dragula([snippets, droppable], {
-  copy: function(el, source) {
-    return source === snippets;
-  },
-  accepts: function(el, target) {
-    return target !== snippets;
-  }
-});
+    copy: function(el, source) {
+      return source === snippets;
+    },
+    accepts: function(el, target) {
+      return target !== snippets;
+    }
+  }).on("drop", (el, target) => {
+    el.addEventListener("mouseenter", showDeleteBtnOnHover);
+    el.addEventListener("mouseleave", ()=>{
+      deleteBtn.style.display = "none";
+    });
+  });
 
 filter.addEventListener("click", event => {
   // only work with buttons
@@ -33,6 +39,13 @@ filter.addEventListener("click", event => {
   masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
 });
 
+function showDeleteBtnOnHover (el) {
+  const rect = el.target.getBoundingClientRect();
+  deleteBtn.style.top = rect.top;
+  deleteBtn.style.left = rect.left;
+  deleteBtn.style.display = "block";
+}
+
 function masonry(grid, gridCell, gridGutter, dGridCol, tGridCol, mGridCol) {
   var g = document.querySelector(grid),
       gc = document.querySelectorAll(gridCell),
@@ -45,7 +58,7 @@ function masonry(grid, gridCell, gridGutter, dGridCol, tGridCol, mGridCol) {
   }
   
   if(window.screen.width >= 1024)
-    g.style.height = gHeight/dGridCol + gHeight/(gcLength+1) + "px";
+    g.style.height = gHeight/dGridCol + gHeight/(gcLength+1) + 100 +"px";
   else if(window.screen.width < 1024 && window.screen.width >= 768)
     g.style.height = gHeight/tGridCol + gHeight/(gcLength+1) + "px";
   else
@@ -88,11 +101,12 @@ downloadBtn.addEventListener("click", event => {
     });
 });
 
-  ["resize", "load"].forEach(function(event) {
-    window.addEventListener(event, function() {
-      imagesLoaded( snippets, function() {
-        // A maonsry grid with 0px gutter, with 2 columns on desktop, 2 on tablet, and 1 column on mobile devices.
-        masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
-      });
+["resize", "load"].forEach(function(event) {
+  window.addEventListener(event, function() {
+    imagesLoaded( snippets, function() {
+      // A maonsry grid with 0px gutter, with 2 columns on desktop, 2 on tablet, and 1 column on mobile devices.
+      masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
     });
   });
+});
+
