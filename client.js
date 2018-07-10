@@ -88,9 +88,6 @@ downloadBtn.addEventListener("click", event => {
     });
 });
 
-
-imagesLoaded( snippets, function( instance ) {
-  console.log('all images are loaded');
   ["resize", "load"].forEach(function(event) {
     window.addEventListener(event, function() {
       imagesLoaded( snippets, function() {
@@ -99,4 +96,3 @@ imagesLoaded( snippets, function( instance ) {
       });
     });
   });
-});
