@@ -17,10 +17,7 @@ dragula([snippets, droppable], {
     }
   }).on("drop", (el, target) => {
     el.addEventListener("mouseenter", showDeleteBtnOnHover);
-    el.addEventListener("mouseleave", ()=>{
-      deleteBtn.style.display = "none";
-      el.dispatchEvent("mouseleave");
-    });
+    el.addEventListener("mouseleave", hideDeleteBtnOnLeave);
   });
 
 filter.addEventListener("click", event => {
@@ -41,9 +38,12 @@ filter.addEventListener("click", event => {
   masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
 });
 
+function hideDeleteBtnOnLeave (el) {
+  deleteBtn.style.display = "none";
+}
+
 function showDeleteBtnOnHover (el) {
   const rect = el.target.getBoundingClientRect();
-  el.dispatchEvent("mouseenter");
   deleteBtn.style.top = rect.top;
   deleteBtn.style.left = rect.left;
   deleteBtn.style.display = "block";
@@ -103,6 +103,7 @@ downloadBtn.addEventListener("click", event => {
       download("stitches.html", json.data);
     });
 });
+
 
 ["resize", "load"].forEach(function(event) {
   window.addEventListener(event, function() {

@@ -6,6 +6,7 @@ const snippet = document.querySelectorAll(".js-snippet");
 const filter = document.querySelector(".js-filter");
 const downloadBtn = document.querySelector(".js-download");
 const deleteBtn = document.querySelector(".js-delete-btn");
+const deleteBtnHtml = "<div class='bg-white hidden fixed js-delete-btn px-4 py-2 shadow'>Delete <i class='far fa-trash-alt'></i></div>";
 
 dragula([snippets, droppable], {
     copy: function(el, source) {
@@ -16,9 +17,7 @@ dragula([snippets, droppable], {
     }
   }).on("drop", (el, target) => {
     el.addEventListener("mouseenter", showDeleteBtnOnHover);
-    el.addEventListener("mouseleave", ()=>{
-      deleteBtn.style.display = "none";
-    });
+    el.addEventListener("mouseleave", hideDeleteBtnOnLeave);
   });
 
 filter.addEventListener("click", event => {
@@ -38,6 +37,10 @@ filter.addEventListener("click", event => {
 
   masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
 });
+
+function hideDeleteBtnOnLeave (el) {
+  deleteBtn.style.display = "none";
+}
 
 function showDeleteBtnOnHover (el) {
   const rect = el.target.getBoundingClientRect();
@@ -100,6 +103,7 @@ downloadBtn.addEventListener("click", event => {
       download("stitches.html", json.data);
     });
 });
+
 
 ["resize", "load"].forEach(function(event) {
   window.addEventListener(event, function() {
