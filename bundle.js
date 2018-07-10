@@ -97,18 +97,6 @@ downloadBtn.addEventListener("click", event => {
       });
     });
   });
-
-// imagesLoaded( snippets, function( instance ) {
-//   console.log('all images are loaded');
-//   ["resize", "load"].forEach(function(event) {
-//     window.addEventListener(event, function() {
-//       imagesLoaded( snippets, function() {
-//         // A maonsry grid with 0px gutter, with 2 columns on desktop, 2 on tablet, and 1 column on mobile devices.
-//         masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
-//       });
-//     });
-//   });
-// });
 },{"dragula":9,"imagesloaded":11}],2:[function(require,module,exports){
 module.exports = function atoa (a, n) { return Array.prototype.slice.call(a, n); }
 
