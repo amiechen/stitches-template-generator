@@ -118,7 +118,7 @@ module.exports = {
   */
 
   fonts: {
-    sans: ["Muli", "Helvetica Neue", "sans-serif"],
+    sans: ["AvenirNext", "Helvetica Neue", "sans-serif"],
     serif: [
       "Constantia",
       "Lucida Bright",
@@ -232,7 +232,7 @@ module.exports = {
   tracking: {
     tight: "-0.05em",
     normal: "0",
-    wide: "0.05em"
+    wide: "0.1em"
   },
 
   /*
@@ -734,7 +734,7 @@ module.exports = {
     borderStyle: ["responsive"],
     borderWidths: ["responsive", "hover"],
     cursor: ["responsive", "hover"],
-    display: ["responsive"],
+    display: ["responsive", "hover"],
     flexbox: ["responsive"],
     float: ["responsive"],
     fonts: ["responsive"],

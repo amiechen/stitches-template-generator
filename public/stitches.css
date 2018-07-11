@@ -1324,6 +1324,34 @@ button,
   display: none;
 }
 
+.hover\:block:hover {
+  display: block;
+}
+
+.hover\:inline-block:hover {
+  display: inline-block;
+}
+
+.hover\:inline:hover {
+  display: inline;
+}
+
+.hover\:table:hover {
+  display: table;
+}
+
+.hover\:table-row:hover {
+  display: table-row;
+}
+
+.hover\:table-cell:hover {
+  display: table-cell;
+}
+
+.hover\:hidden:hover {
+  display: none;
+}
+
 .flex {
   display: flex;
 }
@@ -1491,7 +1519,7 @@ button,
 }
 
 .font-sans {
-  font-family: Muli, Helvetica Neue, sans-serif;
+  font-family: AvenirNext, Helvetica Neue, sans-serif;
 }
 
 .font-serif {
@@ -2902,7 +2930,7 @@ button,
 }
 
 .tracking-wide {
-  letter-spacing: .05em;
+  letter-spacing: .1em;
 }
 
 .select-none {
@@ -3898,6 +3926,34 @@ button,
     display: none;
   }
 
+  .xs\:hover\:block:hover {
+    display: block;
+  }
+
+  .xs\:hover\:inline-block:hover {
+    display: inline-block;
+  }
+
+  .xs\:hover\:inline:hover {
+    display: inline;
+  }
+
+  .xs\:hover\:table:hover {
+    display: table;
+  }
+
+  .xs\:hover\:table-row:hover {
+    display: table-row;
+  }
+
+  .xs\:hover\:table-cell:hover {
+    display: table-cell;
+  }
+
+  .xs\:hover\:hidden:hover {
+    display: none;
+  }
+
   .xs\:flex {
     display: flex;
   }
@@ -4065,7 +4121,7 @@ button,
   }
 
   .xs\:font-sans {
-    font-family: Muli, Helvetica Neue, sans-serif;
+    font-family: AvenirNext, Helvetica Neue, sans-serif;
   }
 
   .xs\:font-serif {
@@ -5468,7 +5524,7 @@ button,
   }
 
   .xs\:tracking-wide {
-    letter-spacing: .05em;
+    letter-spacing: .1em;
   }
 
   .xs\:select-none {
@@ -6388,6 +6444,34 @@ button,
     display: none;
   }
 
+  .sm\:hover\:block:hover {
+    display: block;
+  }
+
+  .sm\:hover\:inline-block:hover {
+    display: inline-block;
+  }
+
+  .sm\:hover\:inline:hover {
+    display: inline;
+  }
+
+  .sm\:hover\:table:hover {
+    display: table;
+  }
+
+  .sm\:hover\:table-row:hover {
+    display: table-row;
+  }
+
+  .sm\:hover\:table-cell:hover {
+    display: table-cell;
+  }
+
+  .sm\:hover\:hidden:hover {
+    display: none;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -6555,7 +6639,7 @@ button,
   }
 
   .sm\:font-sans {
-    font-family: Muli, Helvetica Neue, sans-serif;
+    font-family: AvenirNext, Helvetica Neue, sans-serif;
   }
 
   .sm\:font-serif {
@@ -7958,7 +8042,7 @@ button,
   }
 
   .sm\:tracking-wide {
-    letter-spacing: .05em;
+    letter-spacing: .1em;
   }
 
   .sm\:select-none {
@@ -8878,6 +8962,34 @@ button,
     display: none;
   }
 
+  .md\:hover\:block:hover {
+    display: block;
+  }
+
+  .md\:hover\:inline-block:hover {
+    display: inline-block;
+  }
+
+  .md\:hover\:inline:hover {
+    display: inline;
+  }
+
+  .md\:hover\:table:hover {
+    display: table;
+  }
+
+  .md\:hover\:table-row:hover {
+    display: table-row;
+  }
+
+  .md\:hover\:table-cell:hover {
+    display: table-cell;
+  }
+
+  .md\:hover\:hidden:hover {
+    display: none;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -9045,7 +9157,7 @@ button,
   }
 
   .md\:font-sans {
-    font-family: Muli, Helvetica Neue, sans-serif;
+    font-family: AvenirNext, Helvetica Neue, sans-serif;
   }
 
   .md\:font-serif {
@@ -10448,7 +10560,7 @@ button,
   }
 
   .md\:tracking-wide {
-    letter-spacing: .05em;
+    letter-spacing: .1em;
   }
 
   .md\:select-none {
@@ -11368,6 +11480,34 @@ button,
     display: none;
   }
 
+  .lg\:hover\:block:hover {
+    display: block;
+  }
+
+  .lg\:hover\:inline-block:hover {
+    display: inline-block;
+  }
+
+  .lg\:hover\:inline:hover {
+    display: inline;
+  }
+
+  .lg\:hover\:table:hover {
+    display: table;
+  }
+
+  .lg\:hover\:table-row:hover {
+    display: table-row;
+  }
+
+  .lg\:hover\:table-cell:hover {
+    display: table-cell;
+  }
+
+  .lg\:hover\:hidden:hover {
+    display: none;
+  }
+
   .lg\:flex {
     display: flex;
   }
@@ -11535,7 +11675,7 @@ button,
   }
 
   .lg\:font-sans {
-    font-family: Muli, Helvetica Neue, sans-serif;
+    font-family: AvenirNext, Helvetica Neue, sans-serif;
   }
 
   .lg\:font-serif {
@@ -12938,7 +13078,7 @@ button,
   }
 
   .lg\:tracking-wide {
-    letter-spacing: .05em;
+    letter-spacing: .1em;
   }
 
   .lg\:select-none {
@@ -13858,6 +13998,34 @@ button,
     display: none;
   }
 
+  .xl\:hover\:block:hover {
+    display: block;
+  }
+
+  .xl\:hover\:inline-block:hover {
+    display: inline-block;
+  }
+
+  .xl\:hover\:inline:hover {
+    display: inline;
+  }
+
+  .xl\:hover\:table:hover {
+    display: table;
+  }
+
+  .xl\:hover\:table-row:hover {
+    display: table-row;
+  }
+
+  .xl\:hover\:table-cell:hover {
+    display: table-cell;
+  }
+
+  .xl\:hover\:hidden:hover {
+    display: none;
+  }
+
   .xl\:flex {
     display: flex;
   }
@@ -14025,7 +14193,7 @@ button,
   }
 
   .xl\:font-sans {
-    font-family: Muli, Helvetica Neue, sans-serif;
+    font-family: AvenirNext, Helvetica Neue, sans-serif;
   }
 
   .xl\:font-serif {
@@ -15428,7 +15596,7 @@ button,
   }
 
   .xl\:tracking-wide {
-    letter-spacing: .05em;
+    letter-spacing: .1em;
   }
 
   .xl\:select-none {

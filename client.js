@@ -5,8 +5,8 @@ const snippets = document.querySelector(".js-snippets");
 const snippet = document.querySelectorAll(".js-snippet");
 const filter = document.querySelector(".js-filter");
 const downloadBtn = document.querySelector(".js-download");
-const deleteBtn = document.querySelector(".js-delete-btn");
-const deleteBtnHtml = "<div class='bg-white hidden fixed js-delete-btn px-4 py-2 shadow'>Delete <i class='far fa-trash-alt'></i></div>";
+const deleteBtns = document.querySelectorAll(".js-delete-btn");
+const deleteBtnHtml = "<div class='bg-white hidden absolute pin-t pin-l js-delete-btn px-4 py-2 shadow'>Delete <i class='far fa-trash-alt'></i></div>";
 
 dragula([snippets, droppable], {
     copy: function(el, source) {
@@ -16,8 +16,8 @@ dragula([snippets, droppable], {
       return target !== snippets;
     }
   }).on("drop", (el, target) => {
-    el.addEventListener("mouseenter", showDeleteBtnOnHover);
-    el.addEventListener("mouseleave", hideDeleteBtnOnLeave);
+    el.innerHTML += deleteBtnHtml;
+    el.classList.add("relative");
   });
 
 filter.addEventListener("click", event => {
@@ -102,6 +102,13 @@ downloadBtn.addEventListener("click", event => {
     .then(json => {
       download("stitches.html", json.data);
     });
+});
+
+document.addEventListener("click", function(event){
+  if (event.target.classList.contains("js-delete-btn")) {
+    document.querySelector(".js-droppable").removeChild(event.target.parentElement);
+    console.log("removed item");
+  }
 });
 
 
