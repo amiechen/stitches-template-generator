@@ -3272,6 +3272,10 @@ button,
   letter-spacing: 1em;
 }
 
+.hover\:show-child:hover .hover\:block {
+  display: block;
+}
+
 @media (min-width: 320px) {
   .xs\:list-reset {
     list-style: none;

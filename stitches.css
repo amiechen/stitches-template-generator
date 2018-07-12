@@ -104,3 +104,7 @@
 .tracking-extrawide {
   letter-spacing: 1em;
 }
+
+.hover\:show-child:hover .hover\:block {
+  display: block;
+}

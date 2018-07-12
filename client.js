@@ -6,7 +6,7 @@ const snippet = document.querySelectorAll(".js-snippet");
 const filter = document.querySelector(".js-filter");
 const downloadBtn = document.querySelector(".js-download");
 const deleteBtns = document.querySelectorAll(".js-delete-btn");
-const deleteBtnHtml = "<div class='bg-white hidden absolute pin-t pin-l js-delete-btn px-4 py-2 shadow'>Delete <i class='far fa-trash-alt'></i></div>";
+const deleteBtnHtml = "<div class='bg-white hidden absolute pin-t pin-l js-delete-btn px-4 py-2 shadow'><i class='far fa-trash-alt'></i></div>";
 
 dragula([snippets, droppable], {
     copy: function(el, source) {
