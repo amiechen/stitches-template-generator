@@ -97,6 +97,10 @@ button:focus {
   transform: scale(1.1);
 }
 
+.hover\:translate-y-1:hover {
+  transform: translateY(-1px);
+}
+
 .hover\:transform-scale-subtle:hover {
   transform: scale(1.03);
 }

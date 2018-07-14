@@ -704,6 +704,10 @@ button,
   background-color: #fff;
 }
 
+.bg-green {
+  background-color: #38c172;
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -742,6 +746,10 @@ button,
 
 .hover\:bg-white:hover {
   background-color: #fff;
+}
+
+.hover\:bg-green:hover {
+  background-color: #38c172;
 }
 
 .bg-auto {
@@ -794,6 +802,10 @@ button,
 
 .border-white {
   border-color: #fff;
+}
+
+.border-green {
+  border-color: #38c172;
 }
 
 .rounded-none {
@@ -2655,6 +2667,10 @@ button,
   color: #fff;
 }
 
+.text-green {
+  color: #38c172;
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -2693,6 +2709,10 @@ button,
 
 .hover\:text-white:hover {
   color: #fff;
+}
+
+.hover\:text-green:hover {
+  color: #38c172;
 }
 
 .text-xs {
@@ -3055,6 +3075,11 @@ button:focus {
 .transform-scale-1-1 {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.hover\:translate-y-1:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
 }
 
 .hover\:transform-scale-subtle:hover {
