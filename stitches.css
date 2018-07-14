@@ -29,6 +29,10 @@
 @tailwind components;
 
 /* Stitches classes */
+button:focus {
+  outline: 0;
+}
+
 .label-floating input:not(:placeholder-shown) {
   padding-top: 1.4rem;
 }

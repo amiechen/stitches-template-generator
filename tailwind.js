@@ -762,12 +762,12 @@ module.exports = {
     textSizes: ["responsive"],
     textStyle: ["responsive", "hover"],
     tracking: ["responsive"],
-    userSelect: ["responsive"],
-    verticalAlign: ["responsive"],
-    visibility: ["responsive"],
-    whitespace: ["responsive"],
+    userSelect: false,
+    verticalAlign: false,
+    visibility: false,
+    whitespace: false,
     width: ["responsive"],
-    zIndex: ["responsive"]
+    zIndex: false
   },
 
   /*
