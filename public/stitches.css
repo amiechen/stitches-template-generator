@@ -3082,17 +3082,6 @@ button:focus {
   order: 3;
 }
 
-.label-floating input:not(:placeholder-shown) ~ label {
-  padding-top: .4rem;
-  font-size: .7rem;
-  transition: all .1s ease-in-out;
-  color: #8795a1;
-}
-
-.order-first {
-  order: -1;
-}
-
 .order-4 {
   order: 4;
 }
@@ -4683,10 +4672,6 @@ button:focus {
     order: 3;
   }
 
-  .xs\:order-first {
-    order: -1;
-  }
-
   .xs\:order-4 {
     order: 4;
   }
@@ -6244,10 +6229,6 @@ button:focus {
 
   .sm\:order-3 {
     order: 3;
-  }
-
-  .sm\:order-first {
-    order: -1;
   }
 
   .sm\:order-4 {
@@ -7809,10 +7790,6 @@ button:focus {
     order: 3;
   }
 
-  .md\:order-first {
-    order: -1;
-  }
-
   .md\:order-4 {
     order: 4;
   }
@@ -9372,10 +9349,6 @@ button:focus {
     order: 3;
   }
 
-  .lg\:order-first {
-    order: -1;
-  }
-
   .lg\:order-4 {
     order: 4;
   }
@@ -10933,10 +10906,6 @@ button:focus {
 
   .xl\:order-3 {
     order: 3;
-  }
-
-  .xl\:order-first {
-    order: -1;
   }
 
   .xl\:order-4 {
