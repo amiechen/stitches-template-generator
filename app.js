@@ -24,6 +24,10 @@ app.use(morgan('combined'));
 app.use(express.static("."));
 app.use(bodyParser.json());
 
+app.get("/healthcheck", (req, res) => {
+  res.sendStatus(200);
+});
+
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname + "/index.html"));
 });
