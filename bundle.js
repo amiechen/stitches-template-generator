@@ -106,10 +106,8 @@ downloadBtn.addEventListener("click", event => {
 });
 
 document.addEventListener("click", function(event){
-  event.stopPropagation();
   if (event.target.classList.contains("js-delete-btn")) {
     document.querySelector(".js-droppable").removeChild(event.target.parentElement);
-    console.log("removed item");
   }
 });
 

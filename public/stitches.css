@@ -808,6 +808,50 @@ button,
   border-color: #38c172;
 }
 
+.hover\:border-transparent:hover {
+  border-color: transparent;
+}
+
+.hover\:border-black:hover {
+  border-color: #020203;
+}
+
+.hover\:border-grey-darkest:hover {
+  border-color: #3d4852;
+}
+
+.hover\:border-grey-darker:hover {
+  border-color: #606f7b;
+}
+
+.hover\:border-grey-dark:hover {
+  border-color: #8795a1;
+}
+
+.hover\:border-grey:hover {
+  border-color: #b8c2cc;
+}
+
+.hover\:border-grey-light:hover {
+  border-color: #dae1e7;
+}
+
+.hover\:border-grey-lighter:hover {
+  border-color: #f1f5f8;
+}
+
+.hover\:border-grey-lightest:hover {
+  border-color: #f8fafc;
+}
+
+.hover\:border-white:hover {
+  border-color: #fff;
+}
+
+.hover\:border-green:hover {
+  border-color: #38c172;
+}
+
 .rounded-none {
   border-radius: 0;
 }

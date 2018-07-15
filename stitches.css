@@ -63,19 +63,6 @@ button:focus {
   .order-3 {
     order: 3;
   }
-}
-
-.label-floating input:not(:placeholder-shown) ~ label {
-  padding-top: 0.4rem;
-  font-size: 0.7rem;
-  transition: all 0.1s ease-in-out;
-  color: #8795a1;
-}
-
-@responsive {
-  .order-first {
-    order: -1;
-  }
   .order-4 {
     order: 4;
   }
@@ -89,6 +76,7 @@ button:focus {
     column-count: 2;
   }
 }
+
 .-translate-50-50 {
   transform: translate(-50%, -50%);
 }
