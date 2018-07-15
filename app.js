@@ -1,4 +1,5 @@
 const express = require("express");
+const morgan = require("morgan");
 const app = express();
 const path = require("path");
 const fs = require("fs");
@@ -19,6 +20,7 @@ let stitchesHTML = html => `<html lang="en">
   <body>${html}</body>
 </html>`;
 
+app.use(morgan('combined'));
 app.use(express.static("."));
 app.use(bodyParser.json());
 

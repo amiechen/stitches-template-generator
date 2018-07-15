@@ -34,7 +34,8 @@
     "body-parser": "^1.18.3",
     "dragula": "^3.7.2",
     "express": "^4.16.3",
-    "imagesloaded": "^4.1.4"
+    "imagesloaded": "^4.1.4",
+    "morgan": "^1.9.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.5.0",
