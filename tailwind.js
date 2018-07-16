@@ -119,7 +119,7 @@ module.exports = {
   */
 
   fonts: {
-    sans: ["AvenirNext", "Helvetica Neue", "sans-serif"],
+    sans: ["Muli", "AvenirNext", "Helvetica Neue", "sans-serif"],
     serif: [
       "Constantia",
       "Lucida Bright",

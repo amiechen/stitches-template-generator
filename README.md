@@ -3,7 +3,7 @@
 
 A simple, fast web app to generate html based on a collection of commonly used user interface patterns.
 
-![app-screen-shot](./screenshot.png)
+![app-screen-shot](https://res.cloudinary.com/hyperyolo/image/upload/v1531752104/screenshot.png)
 
 ## Running it locally
 

@@ -7,6 +7,9 @@ const bodyParser = require("body-parser");
 const http = require("http");
 const stitchesCSSPath =
   "https://rawgit.com/amiechen/web-component-library/master/public/stitches.css";
+const fontMuliPath = "https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900";
+const fontAwesomePath = "https://use.fontawesome.com/releases/v5.0.13/css/all.css";
+const fontAwesomeIntegrity = "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp";
 
 let stitchesHTML = html => `<html lang="en">
   <head>
@@ -14,7 +17,8 @@ let stitchesHTML = html => `<html lang="en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href=${stitchesCSSPath}>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href=${fontMuliPath} rel="stylesheet">
+    <link rel="stylesheet" href=${fontAwesomePath} integrity=${fontAwesomeIntegrity} crossorigin="anonymous">
     <title>Stitches</title>
   </head>
   <body>${html}</body>
