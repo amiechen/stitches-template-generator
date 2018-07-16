@@ -1,33 +1,3 @@
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext/AvenirNext-Bold.woff") format("woff");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext/AvenirNext-Demi.woff") format("woff");
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext/AvenirNext-Medium.woff") format("woff");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext/AvenirNext-Regular.woff") format("woff");
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "AvenirNext";
-  src: url("../fonts/AvenirNext/AvenirNext-UltLt.woff") format("woff");
-  font-weight: 100;
-}
-
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
