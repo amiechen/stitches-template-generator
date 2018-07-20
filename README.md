@@ -11,9 +11,19 @@ A simple, fast web app to generate html based on a collection of commonly used u
 npm install
 npm start
 ```
-this compiles `client.js` into `bundle.js`, run `postcss` for css changes as well as starts the node app.
+This will compile the JS, CSS and start a node server on port 3000.
 
-then head to `localhost:3000`. You should see stitches now!
+Head to `localhost:3000`. You should see stitches now!
+
+### Docker
+You can also run it in Docker.
+```
+# Build the container
+make build
+
+# Run the node server
+make run
+```
 
 
 ## Make your own templates

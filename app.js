@@ -33,17 +33,17 @@ app.get("/healthcheck", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "/index.html"));
+  res.sendFile(path.join(__dirname + "/../index.html"));
 });
 
 app.post("/download", (req, res) => {
   let templates = req.body.data; // e.g. [ 'nav-1', 'hero-1' ]
-  let file = path.join(__dirname + "/stitches.html");
+  let file = path.join(__dirname + "/../stitches.html");
   let html = "";
 
   templates.forEach(template => {
     html += fs.readFileSync(
-      path.join(__dirname + `/templates/${template}.html`),
+      path.join(__dirname + `/../templates/${template}.html`),
       "utf-8"
     );
   });
