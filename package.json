@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "postcss stitches.css -o public/stitches.css",
     "watch:css": "postcss stitches.css -o public/stitches.css -w",
-    "start": "npm run build:app & npm run build:css & npm run build:service & npm run start:service",
+    "start": "npm run build:app & npm run build:css & npm run build:service && npm run start:service",
     "start:dev": "(npm run build:service && npm run start:service:dev) & npm run watch:app & npm run watch:css & npm run watch:service",
     "watch:app": "watchify client.js -o public/client.js",
     "build:app": "browserify client.js | babel --presets minify --out-file public/client.js",
