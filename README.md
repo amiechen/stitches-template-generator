@@ -6,7 +6,7 @@ A simple, fast web app to generate html based on a collection of commonly used u
 
 ## Running it locally
 
-
+cd into `stitches-template-generator` and run:
 ```
 npm install
 npm start
