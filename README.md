@@ -34,5 +34,3 @@ Feel free to take this project and re-factor to your need! Not everyone wants th
 3. Add your own HTML template (with tailwind.css classes) into the `templates` folder
 4. Add a filter button for it in the `index.html`. (i.e. add `<button class="text-black font-semibold hover:text-green px-2 py-1 transition-normal" data-filter="st-<your template name>">Tabs</button>`) 
 5. Done! refresh to check out your own templates.
-
-ROnEcCavIlEmHe9
