@@ -2,7 +2,7 @@
 
 
 A simple, fast web app to generate html based on a collection of commonly used user interface patterns.
-## 🎏 Go to: [stitches.hyperyolo.com](https://stitches.hyperyolo.com)
+## 🎏 Live Site: [stitches.hyperyolo.com](https://stitches.hyperyolo.com)
 ![app-screen-shot](https://cdn-images-1.medium.com/max/2000/1*DqVCpGnXJefwLXFneEHPZg.png)
 
 ## Running it locally
