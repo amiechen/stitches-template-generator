@@ -57,7 +57,7 @@ let colors = {
   green: "#38C172",
   "indigo-darkest": "#191E38",
   "indigo-darker":  "#2F365F",
-  "indigo-dark":    "#5661B3;
+  "indigo-dark":    "#5661B3";
   "indigo": "#6574CD",
   "indigo-light": "#7886D7",
   "indigo-lighter: "#B2B7FF",
