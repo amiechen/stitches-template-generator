@@ -54,7 +54,16 @@ let colors = {
   "grey-lighter": "#f1f5f8",
   "grey-lightest": "#f8fafc",
   white: "#ffffff",
-  green: "#38C172"
+  green: "#38C172",
+  "indigo-darkest": "#191E38",
+  "indigo-darker":  "#2F365F",
+  "indigo-dark":    "#5661B3;
+  "indigo": "#6574CD",
+  "indigo-light": "#7886D7",
+  "indigo-lighter: "#B2B7FF",
+  "indigo-lightest: "#E6E8FF",
+  "fiji": "rgba(255, 255, 255, 0.1)",
+  "fuji": "rgba(0, 0, 0, 0.1)"
 };
 
 module.exports = {
