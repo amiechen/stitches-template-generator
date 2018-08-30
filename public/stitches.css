@@ -2981,6 +2981,34 @@ button,
   width: 100vw;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.z-30 {
+  z-index: 30;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+.z-auto {
+  z-index: auto;
+}
+
 .container {
   width: 100%;
 }
@@ -4622,6 +4650,34 @@ button:focus {
     width: 100vw;
   }
 
+  .xs\:z-0 {
+    z-index: 0;
+  }
+
+  .xs\:z-10 {
+    z-index: 10;
+  }
+
+  .xs\:z-20 {
+    z-index: 20;
+  }
+
+  .xs\:z-30 {
+    z-index: 30;
+  }
+
+  .xs\:z-40 {
+    z-index: 40;
+  }
+
+  .xs\:z-50 {
+    z-index: 50;
+  }
+
+  .xs\:z-auto {
+    z-index: auto;
+  }
+
   .xs\:order-first {
     order: -1;
   }
@@ -6179,6 +6235,34 @@ button:focus {
 
   .sm\:w-screen {
     width: 100vw;
+  }
+
+  .sm\:z-0 {
+    z-index: 0;
+  }
+
+  .sm\:z-10 {
+    z-index: 10;
+  }
+
+  .sm\:z-20 {
+    z-index: 20;
+  }
+
+  .sm\:z-30 {
+    z-index: 30;
+  }
+
+  .sm\:z-40 {
+    z-index: 40;
+  }
+
+  .sm\:z-50 {
+    z-index: 50;
+  }
+
+  .sm\:z-auto {
+    z-index: auto;
   }
 
   .sm\:order-first {
@@ -7740,6 +7824,34 @@ button:focus {
     width: 100vw;
   }
 
+  .md\:z-0 {
+    z-index: 0;
+  }
+
+  .md\:z-10 {
+    z-index: 10;
+  }
+
+  .md\:z-20 {
+    z-index: 20;
+  }
+
+  .md\:z-30 {
+    z-index: 30;
+  }
+
+  .md\:z-40 {
+    z-index: 40;
+  }
+
+  .md\:z-50 {
+    z-index: 50;
+  }
+
+  .md\:z-auto {
+    z-index: auto;
+  }
+
   .md\:order-first {
     order: -1;
   }
@@ -9299,6 +9411,34 @@ button:focus {
     width: 100vw;
   }
 
+  .lg\:z-0 {
+    z-index: 0;
+  }
+
+  .lg\:z-10 {
+    z-index: 10;
+  }
+
+  .lg\:z-20 {
+    z-index: 20;
+  }
+
+  .lg\:z-30 {
+    z-index: 30;
+  }
+
+  .lg\:z-40 {
+    z-index: 40;
+  }
+
+  .lg\:z-50 {
+    z-index: 50;
+  }
+
+  .lg\:z-auto {
+    z-index: auto;
+  }
+
   .lg\:order-first {
     order: -1;
   }
@@ -10856,6 +10996,34 @@ button:focus {
 
   .xl\:w-screen {
     width: 100vw;
+  }
+
+  .xl\:z-0 {
+    z-index: 0;
+  }
+
+  .xl\:z-10 {
+    z-index: 10;
+  }
+
+  .xl\:z-20 {
+    z-index: 20;
+  }
+
+  .xl\:z-30 {
+    z-index: 30;
+  }
+
+  .xl\:z-40 {
+    z-index: 40;
+  }
+
+  .xl\:z-50 {
+    z-index: 50;
+  }
+
+  .xl\:z-auto {
+    z-index: auto;
   }
 
   .xl\:order-first {

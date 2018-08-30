@@ -768,7 +768,7 @@ module.exports = {
     visibility: false,
     whitespace: false,
     width: ["responsive"],
-    zIndex: false
+    zIndex: ["responsive"]
   },
 
   /*
