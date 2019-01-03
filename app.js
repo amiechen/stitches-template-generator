@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const http = require("http");
 const stitchesCSSPath =
   "https://cdn.rawgit.com/amiechen/stitches-template-generator/master/public/stitches.css";
-const fontMuliPath = "https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900";
+const fontMuliPath = "'https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900'";
 const fontAwesomePath = "https://use.fontawesome.com/releases/v5.0.13/css/all.css";
 const fontAwesomeIntegrity = "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp";
 
