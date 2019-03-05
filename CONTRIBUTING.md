@@ -3,7 +3,7 @@
 When contributing to this repository, please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change.
 
-Please note for the purpose of this repo, stitches-template-generator, it doesn't make sense to merge in and share everyone's template in one repo. Please fork the repo and run it locally if you wish to add your own templates for your development purpose. I will **only merge bug fixes and other updates** into the repo.
+Since many have asked, I (the owner of the repo) want to clarify that it doesn't make sense to merge in and share everyone's template in one repo. Therefore, please **fork the repo and run it locally** if you wish to add your own templates for your development purpose. I will **only merge bug fixes and other updates** into the repo for the meantime.
 
 ## Pull Request Process
 
