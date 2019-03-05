@@ -47,7 +47,7 @@
     "autoprefixer": "^8.5.0",
     "babel-cli": "^6.26.0",
     "babel-preset-minify": "^0.4.3",
-    "browserify": "^16.2.2",
+    "browserify": "^16.2.3",
     "nodemon": "^1.18.3",
     "postcss-cli": "^5.0.0",
     "postcss-extend": "^1.0.5",
@@ -57,6 +57,6 @@
     "postcss-simple-vars": "^4.1.0",
     "purgecss": "^1.0.1",
     "tailwindcss": "^0.5.3",
-    "watchify": "^3.11.0"
+    "watchify": "^3.11.1"
   }
 }
