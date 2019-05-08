@@ -1,62 +1,20 @@
 {
-  "name": "stitches",
-  "version": "0.5.0",
-  "description": "web designers and developers' secret weapon. Generate html based on a collection of commonly used user interface patterns with no third-party css framework",
-  "main": "app.js",
+  "name": "stitches2019",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "postcss stitches.css -o public/stitches.css",
-    "watch:css": "postcss stitches.css -o public/stitches.css -w",
-    "start": "npm run build:app & npm run build:css & npm run build:service && npm run start:service",
-    "start:dev": "(npm run build:service && npm run start:service:dev) & npm run watch:app & npm run watch:css & npm run watch:service",
-    "watch:app": "watchify client.js -o public/client.js",
-    "build:app": "browserify client.js | babel --presets minify --out-file public/client.js",
-    "start:service": "node ./lib/app.js",
-    "start:service:dev": "nodemon ./lib/app.js",
-    "watch:service": "babel --watch app.js -d ./lib",
-    "build:service": "babel app.js -d ./lib"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amiechen/web-component-library.git"
-  },
-  "keywords": [
-    "web",
-    "components",
-    "sort",
-    "builder",
-    "tailwind",
-    "tailwindcss",
-    "postcss",
-    "stitches"
-  ],
-  "author": "Amie Chen",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/amiechen/web-component-library/issues"
-  },
-  "homepage": "https://github.com/amiechen/web-component-library#readme",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
     "dragula": "^3.7.2",
-    "express": "^4.16.3",
     "imagesloaded": "^4.1.4",
-    "morgan": "^1.9.0"
+    "js-file-download": "^0.4.5",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "autoprefixer": "^8.5.0",
-    "babel-cli": "^6.26.0",
-    "babel-preset-minify": "^0.4.3",
-    "browserify": "^16.2.3",
-    "nodemon": "^1.18.3",
-    "postcss-cli": "^5.0.0",
-    "postcss-extend": "^1.0.5",
-    "postcss-import": "^11.1.0",
-    "postcss-mixins": "^6.2.0",
-    "postcss-nested": "^3.0.0",
-    "postcss-simple-vars": "^4.1.0",
-    "purgecss": "^1.0.1",
-    "tailwindcss": "^0.5.3",
-    "watchify": "^3.11.1"
+    "tailwindcss": "^0.7.4"
   }
 }
