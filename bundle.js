@@ -90,7 +90,7 @@ downloadBtn.addEventListener("click", event => {
 
   Promise.all(
     selectedBlocks.map(template =>
-      fetch(`http://stitches.hyperyolo.com/templates/${template}.html`).then(
+      fetch(`https://stitches.hyperyolo.com/templates/${template}.html`).then(
         response => response.text()
       )
     )
