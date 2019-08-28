@@ -110,7 +110,7 @@ document.addEventListener("click", function(event) {
 ["resize", "load"].forEach(function(event) {
   window.addEventListener(event, function() {
     imagesLoaded(snippets, function() {
-      // A maonsry grid with 0px gutter, with 2 columns on desktop, 2 on tablet, and 1 column on mobile devices.
+      // A masonry grid with 0px gutter, with 2 columns on desktop, 2 on tablet, and 1 column on mobile devices.
       masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
     });
   });
