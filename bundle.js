@@ -8,10 +8,8 @@ const snippet = document.querySelectorAll(".js-snippet");
 const filter = document.querySelector(".js-filter");
 const downloadBtn = document.querySelector(".js-download");
 const deleteBtnHtml =
-  "<div class='bg-white hidden absolute pin-t pin-l js-delete-btn px-4 py-2 shadow'><i class='far fa-trash-alt pointer-events-none'></i></div>";
+  "<div class='bg-white hidden absolute top-0 left-0 js-delete-btn px-4 py-2 shadow'><i class='far fa-trash-alt pointer-events-none'></i></div>";
 const stitchesCSSPath = "https://stitches.hyperyolo.com/output.css";
-const fontMuliPath =
-  "https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900";
 const fontAwesomePath =
   "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
 const fontAwesomeIntegrity =
@@ -23,7 +21,6 @@ const stitchesHTML = html => `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href=${stitchesCSSPath} rel="stylesheet">
-    <link href=${fontMuliPath} rel="stylesheet">
     <link rel="stylesheet" href=${fontAwesomePath} integrity=${fontAwesomeIntegrity} crossorigin="anonymous">
     <title>Stitches</title>
   </head>
@@ -90,12 +87,12 @@ downloadBtn.addEventListener("click", event => {
 
   Promise.all(
     selectedBlocks.map(template =>
-      fetch(`https://stitches.hyperyolo.com/templates/${template}.html`).then(
+      fetch(`../templates/${template}.html`).then(
         response => response.text()
       )
     )
   ).then(templateString => {
-    html += templateString;
+    html += templateString.join("");
     fileDownload(stitchesHTML(html), "stitches.html");
   });
 });
@@ -111,7 +108,7 @@ document.addEventListener("click", function(event) {
 ["resize", "load"].forEach(function(event) {
   window.addEventListener(event, function() {
     imagesLoaded(snippets, function() {
-      // A maonsry grid with 0px gutter, with 2 columns on desktop, 2 on tablet, and 1 column on mobile devices.
+      // A masonry grid with 0px gutter, with 2 columns on desktop, 2 on tablet, and 1 column on mobile devices.
       masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
     });
   });
@@ -1503,8 +1500,9 @@ return ImagesLoaded;
 });
 
 },{"ev-emitter":10}],12:[function(require,module,exports){
-module.exports = function(data, filename, mime) {
-    var blob = new Blob([data], {type: mime || 'application/octet-stream'});
+module.exports = function(data, filename, mime, bom) {
+    var blobData = (typeof bom !== 'undefined') ? [bom, data] : [data]
+    var blob = new Blob(blobData, {type: mime || 'application/octet-stream'});
     if (typeof window.navigator.msSaveBlob !== 'undefined') {
         // IE workaround for "HTML7007: One or more blob URLs were 
         // revoked by closing the blob for which they were created. 

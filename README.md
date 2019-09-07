@@ -34,7 +34,7 @@ Feel free to take this project and re-factor to your need! Not everyone wants th
 2. Run the project locally (see the section above)
 3. Use [200 ok](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) to run the repo in browser (because file download requires http).
 4. Add your own HTML template (with tailwind.css classes) into the `templates` folder
-5. Add a filter button for it in the `index.html`. (i.e. add `<button class="text-black font-semibold hover:text-green px-2 py-1 transition-normal" data-filter="st-<your template name>">Tabs</button>`)
+5. Add a filter button for it in the `index.html`. (i.e. add `<button class="text-black font-semibold hover:text-green-500 px-2 py-1 transition-normal" data-filter="st-<your template name>">Tabs</button>`)
 6. Done! refresh to check out your own templates.
 
 ## Contributing to the repo
