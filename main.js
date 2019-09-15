@@ -7,10 +7,8 @@ const snippet = document.querySelectorAll(".js-snippet");
 const filter = document.querySelector(".js-filter");
 const downloadBtn = document.querySelector(".js-download");
 const deleteBtnHtml =
-  "<div class='bg-white hidden absolute pin-t pin-l js-delete-btn px-4 py-2 shadow'><i class='far fa-trash-alt pointer-events-none'></i></div>";
+  "<div class='bg-white hidden absolute top-0 left-0 js-delete-btn px-4 py-2 shadow'><i class='far fa-trash-alt pointer-events-none'></i></div>";
 const stitchesCSSPath = "https://stitches.hyperyolo.com/output.css";
-const fontMuliPath =
-  "https://fonts.googleapis.com/css?family=Muli:300,400,600,700,800,900";
 const fontAwesomePath =
   "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
 const fontAwesomeIntegrity =
@@ -22,7 +20,6 @@ const stitchesHTML = html => `<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href=${stitchesCSSPath} rel="stylesheet">
-    <link href=${fontMuliPath} rel="stylesheet">
     <link rel="stylesheet" href=${fontAwesomePath} integrity=${fontAwesomeIntegrity} crossorigin="anonymous">
     <title>Stitches</title>
   </head>
@@ -30,10 +27,10 @@ const stitchesHTML = html => `<!DOCTYPE html>
 </html>`;
 
 dragula([snippets, droppable], {
-  copy: function(el, source) {
+  copy: function (el, source) {
     return source === snippets;
   },
-  accepts: function(el, target) {
+  accepts: function (el, target) {
     return target !== snippets;
   }
 }).on("drop", (el, target) => {
@@ -89,17 +86,17 @@ downloadBtn.addEventListener("click", event => {
 
   Promise.all(
     selectedBlocks.map(template =>
-      fetch(`https://stitches.hyperyolo.com/templates/${template}.html`).then(
+      fetch(`../templates/${template}.html`).then(
         response => response.text()
       )
     )
   ).then(templateString => {
-    html += templateString;
+    html += templateString.join("");
     fileDownload(stitchesHTML(html), "stitches.html");
   });
 });
 
-document.addEventListener("click", function(event) {
+document.addEventListener("click", function (event) {
   if (event.target.classList.contains("js-delete-btn")) {
     document
       .querySelector(".js-droppable")
@@ -107,9 +104,9 @@ document.addEventListener("click", function(event) {
   }
 });
 
-["resize", "load"].forEach(function(event) {
-  window.addEventListener(event, function() {
-    imagesLoaded(snippets, function() {
+["resize", "load"].forEach(function (event) {
+  window.addEventListener(event, function () {
+    imagesLoaded(snippets, function () {
       // A masonry grid with 0px gutter, with 2 columns on desktop, 2 on tablet, and 1 column on mobile devices.
       masonry(".js-snippets", ".js-snippet", 0, 2, 2, 1);
     });
